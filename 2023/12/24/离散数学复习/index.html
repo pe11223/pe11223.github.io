@@ -1,0 +1,1386 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>离散数学复习 | HK的个人博客</title><meta name="author" content="HK"><meta name="copyright" content="HK"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="离散数学复习"><meta name="application-name" content="离散数学复习"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="离散数学复习"><meta property="og:url" content="http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/index.html"><meta property="og:site_name" content="HK的个人博客"><meta property="og:description" content="命题逻辑的基本概念命题命题：能判断其真值的陈述句 真值：真、假(1、0) 真命题：真值为真的命题 假命题：真值为假的命题 原子命题：不能再被分解为更简单的命题 复合命题：由原子命题通过联结词联接而成的命题 例如：    (¬p∧q )→¬r  这个就为原子命题。同时p、q、r只有0和1两种真值例题："><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta property="article:author" content="HK"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta name="description" content="命题逻辑的基本概念命题命题：能判断其真值的陈述句 真值：真、假(1、0) 真命题：真值为真的命题 假命题：真值为假的命题 原子命题：不能再被分解为更简单的命题 复合命题：由原子命题通过联结词联接而成的命题 例如：    (¬p∧q )→¬r  这个就为原子命题。同时p、q、r只有0和1两种真值例题："><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: HK","link":"链接: ","source":"来源: HK的个人博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'HK的个人博客',
+  title: '离散数学复习',
+  postAI: '',
+  pageFillDescription: '命题逻辑的基本概念, 命题, 命题连接词, 否定。, 合取。, 析取。, 蕴涵。, 等价。, 优先顺序, 例题, 命题公式及其赋值, 命题变元, 合式公式, 成真赋值成假赋值, 重言式、矛盾式、可满足式, 命题逻辑等值演算, 等值式, 析取范式与合取范式, 主析取范式与主合取范式, 主析取范式, 主合取范式, 例题, 联结词的完备集, 命题逻辑的推理理论, 推理的相关公式, 自然推理系统P, 谓词逻辑基本概念, 谓词逻辑命题符号化, 谓词逻辑公式及解释, 谓词逻辑等值演算与推理, 谓词逻辑等值式与置换规则, 谓词逻辑前束范式, 谓词逻辑推理理论, 集合代数, 集合的基本概念, 集合的运算, 有穷集的计数, 集合恒等式命题逻辑的基本概念命题命题能判断其真值的陈述句真值真假真命题真值为真的命题假命题真值为假的命题原子命题不能再被分解为更简单的命题复合命题由原子命题通过联结词联接而成的命题例如这个就为原子命题同时只有和两种真值例题下面语句中哪一个选项为命题你今天有空吗请勿随意吐痰我正在说谎是偶数如何判断命题首先判断他是否为陈述句判断它是否有唯一真值为疑问句排除为祈使句排除为一个悖论假设我正在说谎为真那么我在说谎就为假相互矛盾这个就是悖论为真命题命题连接词命题联结词有五种分别为否定合取析取蕴涵等价联结词否定符号化为真值表合取符号化为与同时为真则为真真值表即又不但而且虽然但是一面一面等析取符号化为或只要有一个为真结果为真真值表蕴涵符号化为只有在为为结果才为真值表只要就因为所以仅当只有才除非才除非否则非等符号化为等价符号化为只有和相同时才为真值表出现当且仅当充要条件等优先顺序例题将下面命题符号化不是素数小智和小红是学生小智和小红是同学小智是江苏人或者江西人小红喜欢唱歌或跳舞只要能被整除则一定能被整除只有能被整除则才能被整除能被整除仅当能被整除的充要条件为根号为无理数解是素数符号化为题目有和小智是学生小红为学生符号化为虽然题目有和但是这句话主语为小智和小红它为原子命题小智和小红是同学符号化为小智是江苏人时就不能为江西人小智为江西人时就不能为江苏人这是一个排斥或小智是江苏人小智是江西人所以小智是江苏人且不是江西人小智是江西人且不是江苏人两者为或的关系所以综合一下小红喜欢唱歌同时能喜欢跳舞这里是相容或小红喜欢唱歌小红喜欢跳舞符号化为这里都有能被整除和能被整除则能被整除能被整除只要则即为只要就则有只有才即为只有才蕴涵则有仅当则有根号为无理数有充要条件则为命题公式及其赋值命题变元真值可以变化的命题例真值可为或所以他们都是命题变元合式公式将命题变元用联结词或圆括号安一定逻辑关系联结起来的符号串例这个整体就是一个合式公式同时和都是合式公式这里可以理解为命题变元为数字或者变量合式公式为四则运算成真赋值成假赋值真值表成真赋值使得这种公式为真的赋值成假赋值使得这种公式为假的赋值例题写出的真值表并求他们的成真赋值和成假赋值解按照优先顺序先求内的大于先算下面算都为则为大于先算最后算只有为为才为成假赋值为即成真赋值其他的情况要写出来重言式矛盾式可满足式设为任一命题公式若在它的各种赋值下取值均为真则称为重言式或永真式若在它的各种赋值下取值均为假则称为矛盾式或永假式若不是矛盾式则称为可满足式命题逻辑等值演算等值式设为两个命题公式若构成的等价式为重言式则称与是等值的记作常见等值式双重否定律幂等律交换律结合律分配律对的分配律对的分配律德摩根律析取变合取合取变析取取否定吸收律零律同一律排中律矛盾律蕴涵等值式等价等值式假言易位等价否定等值式归谬论题推断公式类型解其中可由德摩根律化为即新式其中可由德摩根律中得即再由交换律得再由分配律变为即式子中和由排中律可得式子中和由零律可得即为则该公式为重言式或者永真式题用等值演算法证明解其中由等价等值式得即其中和由蕴涵等值式得和即中由德摩根律得和再由德摩根律得和即为再由分配律得再展开为再由排中律和同一律得即其中由德摩根律得综上左式右式得证析取范式与合取范式文字命题变元及其否定简单析取式仅由有限个文字构成的析取式简单合取式仅由有限个文字构成的合取式析取范式由有限个简单合取式的析取构成的命题式合取范式由有限个简单析取式的合取构成的命题式例题用等值演算法求取求下列公式的合取范式和析取范式解先求合取范式这里由蕴涵等值式得即再由等价等值式得这里再由蕴涵等值式得再由德摩根律得其中由分配律得即即这里我们发现括号内都为括号外都为则这个为一个合取范式即合取范式为求析取范式相同步骤由蕴涵等值式得再由等价等值式得这里再由蕴涵等值式得再由德摩根律得即再由分配律设为则有这里用到一步到位图片中的方法即即其中和和为再合取其他公式都为即即这里括号内都为合取括号外都为析取这个为析取范式即析取范式为主析取范式与主合取范式极小项简单合取式每个命题变元和它的否定式恰好出现仅出现一次命题变元或它的否定式按照下标从小到大排列极大项简单析取式每个命题变元和它的否定式恰好出现仅出现一次命题变元或它的否定式按照下标从小到大排列包含的极小项和极大项极小项极大项公式成真赋值名称公式成假赋值名称包含的极小项和极大项极小项极大项公式成真赋值名称公式成假赋值名称主析取范式所有简单合取式都是极小项的取范式其中其内有所以为一个极小项同样包括所以为另一个极小项所以为主析取范式一般用名称表示其中因为极小项对应成真赋值要使最后真值为则赋值都为则表示为而要使最后真值为那么取值为则表示为则公式表示为括号外为析取括号内为合取则该公式为析取范式而其中包括了所以为极小项而只有所以不是一个极小项则该公式不是一个主析取范式主合取范式所有简单析取式都是极大项的取范式括号内为析取括号外为合取则它为合取范式因为该公式只包括两个命题变元则为一个极大项同理也为一个极大项所以该公式为主合取范式其中为极大项对应的是成假赋值则要使其真值为则赋值为则表示为同理为极大项对应的是成假赋值则要使其真值为则赋值为则表示为则公式表示为括号内为析取括号外为合取则它为合取范式因为该公式只包括两个命题变元则为一个极大项但是却不是一个极大项则公式不为主合取范式例题题利用真值表法按顺序求命题公式的主析取范式解中单独一个为合取只有同时为真值才为中优先级更高先算下面才是为析取只有在两者都为才为最后为为蕴涵前面为后为时真值为画一个的真值表则该命题公式的成真赋值为主析取范式所有简单合取式都是极小项而极小项对应的时成真赋值则由成真赋值求下标则主析取范式为题含三个命题变元的命题公式的主合取范式为则他的主析取范式为表示成的形式解设与是极小项和极大项则及不是极小项的都是极大项不是极大项的都是极小项因为这里是三个命题变元所以下标为主合取范式就为极大项则极大项下标为则极小项下标为则主析取范式为题求命题公式的主析取范式和主合取范式解求主析取范式和主合取范式有真值表法和等值演算法这里我们使用等值演算法先求主析取范式式子中括号内外都有蕴涵使用蕴涵等值式得同理得由德摩根律得即其中为一个简单合取式同时是一个极小项因此只要让变为一个极小项就可以了这里采用同一律变为这里和是等价的其中使用排中律前面的变为后面为即为下面再使用分配律变为其中重复则变为括号外都是析取括号内都为合取则他是一个析取范式每个括号内都为一个极小项则它为主析取范式极小项对应成真赋值使得结果为则有及为则公式为主析取范式为则根据不是极小项就是极大项那么主合取范式为联结词的完备集设是一个联结词集合如果任一命题公式可以由仅含中的联结词构成的公式表示则称是一个联结词完备集与非联结词和或非联结词与非联结词或非联结词下面都是联结词的完备集从到中只要集合内有和或就是个联结词完备集其中蕴涵等值式可拆解否定和析取形式则是一个联结词完备集中可以拆解为否定和合取形式则为联结词完备集到同理命题逻辑的推理理论推理的相关公式设和为两个命题公式当且仅当是重言式时则称可推出或是前提的有效结论记作命题公式推出的推理正确当且仅当为重言式推理的形式结构前提结论相关公式附加律化简律假言推理拒取式析取三段论假言三段论等价三段论构造性二难破坏性二难附加律题求一个命题公式推的推理正确当且仅当为重言式解因为有命题公式推出的推理正确当且仅当为重言式则这里答案为题下面不正确的是解由拒取式正确由附加律正确由假言易位正确由拒取式原式为析取则错误选自然推理系统题构造下面推理的证明前提结论要证明这里就需要需要这里就需要需要这里就需要需要这里就只需要需要这里有一个证明前提引入前提引入拒取式前提引入假言推理前提引入拒取式前提引入析取三段论得证是有效结论题在自然推理系统中构造并证明下面推理如果小王是理科生则他的数学成绩一定很好如果小王不是文科生则他一定是理科生小王的数学成绩不好所以小王是文科生解设原子命题小王是理科生小王数学成绩很好小王是文科生如果小王是理科生则他的数学成绩一定很好即为如果小王不是文科生则他一定是理科生即为小王的数学成绩不好即为所以小王是文科生即为整理前提结论证明要证明就需要需要就需要需要有个前提引入前提引入拒取式前提引入拒取式得证题用推理的形式结构证明解前提结论证明附加前提法结论有蕴含中为前提为结论这里只需要证明即可附加前提引入附加律前提引入假言推理化简律第中需要而不是所以化简出附加律前提引入假言推理得证是有效结论即为有效结论题如果小张守第一垒并且小李向队投球则队取胜或者队未取胜或者队成为联赛第一名队没有成为联赛第一名小张守第一垒因此小李没向队投球解设原子命题小张守第一垒小李向队投球队取胜队成为联赛第一名前提如果小张守第一垒并且小李向队投球则队取胜并且如果就即为或者队未取胜或者队成为联赛第一名或即为队没有成为联赛第一名即为小张守第一垒即为整理结论因此小李没向队投球即为证明要求得有要有在中要证明得有两个条件和这种方法麻烦使用附加前提法结论中没有蕴涵式使用归谬法结论中需要两个或者以上条件归谬法把结论否定作为前提在和已有的推理最后得到一个矛盾则该结论为有效结论结论的否定引入前提引入合取前提引入假言推理前提引入析取三段论前提引入合取这里得到一个矛盾所以是一个有效结论谓词逻辑基本概念谓词逻辑命题符号化谓词逻辑命题符号化的三个基本要素个体词谓词量词个体词个体词研究对象中可以独立存在的具体的或抽象的客体例如小智中国个体常项表示具体或特定客体的个体词个体变项表示抽象或泛指的个体词个体域个体变项的取值范围全总个体域由宇宙间一切事物组成的个体域谓词刻画个体词性质及个体词之间相互关系的词例是有理数其中是个体词也是个体常项是有理数为谓词记为这句话符号化为是有理数是有理数是谓词记为则符号化为小霞和小智是同学小霞和小智都是个体词和个体常项和是同学是谓词记为表示小霞表示小智则符号化为题一将下面命题在谓词逻辑中用谓词符号化并讨论他们真值只有是素数才是素数如果大于则大于解只有是素数才是素数设元谓词为素数命题可以符号化为和题目中有只有才只有才则可以符号化为是和数不是素数则为假蕴含中只有前面为后面为真值才为所以这里前面为则真值为及命题为真如果大于则大于大于为谓词大于前后都有个体词这里设二元谓词题目可变为如果则为蕴含即真值为真值为则命题真值为量词个体之间数量关系的词全称量词表示个体域中所有的在题目中出现一切的所有的每一个任意的凡都等等存在量词表示个体域中有一个个体题目中出现存在有一个有的至少有一个等题命题所有的人都长着长头发令是人长者长头发则该命题符号化为解题目中有所有的则使用全称量词则排除命题同样可以理解为是人就长着长头发如果就使用联结词蕴含则题目选题令是人登上过月球则命题有的人登上过月球符号化解题目中有有的则使用存在量词则排除总结全称量词中间连接使用蕴含即存在量词中间使用合取即题设有命题是火车是汽车跑得比快那么命题有的汽车比一些火车跑得快得逻辑表达式为解有的汽车比一些火车跑得快命题中有有的这个为存在量词即汽车为一些同样要使用存在量词火车表示为跑得快这里为因为是存在量词中间使用合取则逻辑表达式为题设是运动员是大学生命题不是所有运动员都是大学生谓词符号化为解不是所有运动员都是大学生不是先忽略掉则为所有运动员都是大学生所有的为全称量词运动员大学生则有即为所有运动员都是大学生因为是全称量词所以中间使用蕴含则不是所有运动员都是大学生为解不是所有运动员都是大学生即为有的运动员不是大学生有的存在量词不是大学生其中是大学生为则不是为其他都一个思路则有谓词逻辑公式及解释在公式和中称为指导变元为量词的辖域在和的辖域中的所有出现都称作约束出现中不是约束出现的其他变项均称作自由出现题指出下列各公式中的指导变元各量词的辖域自由出现以及约束出现的个体变项解中是指导变元的辖域为在中是约束出现约束出现两次而和不是指导变元都是自由出现各自由出现一次和的指导变元为的辖域为是约束出现为自由出现出现一次的指导变元为的辖域为是约束出现为自由出现自由出现两次自由出现一次约束出现次自由出现次自由出现次约束出现次自由出现次设为一公式若在任何情况下的任何赋值均为真则称为永真式或逻辑有效式若在任何情况下的任何赋值均为假则称为矛盾式或永假式若至少存在一个情况下的一个赋值使为真则称为可满足式当多个量词出现时他们的顺序一般不能随意调换例如和两者不等价题设论域与公式等价的命题公式为解论域即个体域与公式将和带入得和下面考虑联结词存在量词代表有的至少有一个析取代表或相当于至少有一个为真时真知为则使用析取则如果题目改为为所有的都要满足则使用合取作为联结词则为谓词逻辑等值演算与推理谓词逻辑等值式与置换规则设是谓词逻辑中任意两个公式若是永真式则称与等值记作称是等值式下面给出谓词逻辑中的基本等值式量词否定等值式量词辖域收缩与扩张等值式量词分配等值式命题逻辑中的重言式的代换实例都是谓词逻辑中的永真式蕴含等值式来推导题设个体域将下列公式的量词消去解先将全称量词消去再将放入公式即即消去量词得全称量词使用合取来联结则解括号外有全称量词括号内有存在量词先进行辖域收缩即消量词和为和即解先消去后面的即先消全称量词得再消存在量词得题设是不含变元的公式谓词公式等价于解题谓词公式的真值为其中定义域解即时真值为定义域即个体域有两个量词先将后面的消去即先消去即再消去即即即谓词逻辑前束范式前束范式具有以下形式的谓词逻辑公式其中即或不含量词例如是前束范式不是前束范式前面为后面即有则不是前束范式前束范式存在定理谓词逻辑中的任何公式都存在等值的前束范式题下列哪项为前束范式解全称量词前有则不是前束范式在开头而不在开头则不是前束范式都在开头不包括量词则是一个前束范式题求下列各式的前束范式解转化方法把条件蕴含或双条件等价联结词转化利用量词否定公式把否定深入到命题变元和谓词公式的前面换名利用量词作用域的扩张和收缩等价式将量词提到前面解第一步公式中没有蕴或等价则第一步跳过第二步量词前有否定即原式变为式子中有两个全称量词且指导变元都是则使用换名第三步将后面的指导变元换为即为即为第四步直接将量词提到前面即为第一步转化式子中有蕴含则使用蕴含等值式即变为第二步去否定第三步换名第四步提前整理谓词逻辑推理理论在谓词逻辑中从前提出发推出结论的推理形式结构已然采用如下蕴含式形式命题逻辑推理定律的代换实例由或可得出或由附加律可得出由基本等值式生成的推理实例即由可得常用重要推理定律条消去量词和引入量词的规则全称量词消去规则是任意个体常量存在量词消去规则是特定个体常量使得真值为的常量全称量词引入规则是任意个体常量里面不包括存在量词引入规则是特定个体常量题构造下面推理的证明前提结论解命题逻辑中证明方法有三种从结论逆向推导附加前提法归谬法结论结论中没有蕴含排除附加前提法先考虑逆向推导结论结论中有存在量词先忽略它则有则先证明和之后在合取就行要求在可以找到要还需要在中由化简律可推出和因为是逆向推导那么放在第一步证明前提引入存在量词消去规则习惯用替换化简律或化简律或前提引入假言推理合取得证是有效结论题构造下面推理证明前提结论解结论结论中有蕴含使用附加前提法将结论前面的作为附加的前提要证明的就是后面的证明是一个结论证明附加前提引入置换存在量词消去规则前提引入析取三段论得证是一个有效结论题证明下列各式所有北极熊都是白色的没有棕熊是白色的所以北极熊不是棕熊解命题符号化所有都是谓词逻辑关键词使用谓词是北极熊是白色的是棕熊构造前提和结论前提所有北极熊都是白色的全称量词使用蕴含没有棕熊是白色的有棕熊是白色的即为即前提为结论所以北极熊不是棕熊总结前提结论证明结论中有蕴含使用附加前提这里我们使用归谬法来演示归谬法把结论否定作为前提和题目已有的前提进行推理最后得出矛盾则结论是有效结论结论的否定引入先变为蕴涵等值式即为德摩根律即为由置换存在量词消去规则化简律化简律前提引入假言推理合取和另外一个前提很相似为则两者矛盾则结论为有效结论集合代数集合的基本概念把一些事物汇集到一起组成一个整体就称作集合而这些事物就是这个集合的元素或成员元素和集合之间的关系是隶属关系即属于或不属于属于记作不属于记作设为集合如果中的每个元素都是中的元素则称是的子集记作如果不被包含记作设为集合如果且则称与相等记作设为集合如果且则称是的真子集记作不含任何元素的集合称作空集记作空集是一切集合的子集含有个元素的集合简称为元集它的含有个元素的子集称作它的元子集题将子集分类解元子集元子集元子集元子集设为集合把的全体子集构成的集合称作的幂集记作例如元子集元子集元子集元子集即若是元集则有个元素在一个具体问题中如果所涉及的集合都是某个集合的子集则称这个集合为全集记作题设则下列正确的是解元子集元子集元子集元子集正确属于要是元素才行这里是集合则错误是元素为集合所以错误同上题已知集合则的幂集和解元子集元子集元子集元子集则幂集为集合的运算并运算交运算差运算对称差的绝对补集题设则差集而对称差解差运算在中把属于的排除则对称差使用先得再来则题设全集的子集为解用则即有穷集的计数题对名会外语的科技人员进行掌握外语情况的调查其统计结果如下会英日德和法语的人分别是和人其中同时会英语和日语的有人会英德和法语中任意两种语言的都是人已知会日语的人既不懂法语也不懂德语分别求只会一种语言英德法日的人数和会种语言人数解令分别表示会英法德日语的人的集合设同时会种语言的人有个只会英法德一种的人为人解得答包含排斥原理非非题用集合计数的包含排斥原理计算之间既不能被和也不能被整除的数的个数解设可被整除可被整除可被整除用表示有穷集的元素数表示小于等于的最大整数非非既能被除也能被除最小公倍数为即则非非集合恒等式幂等律结合律交换律分配律同一律零律排中律矛盾律吸收律德摩根律常用公式题证明证明由得再由德摩根率得再由结合律得这里可以再交一个不影响再由得得证',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-01-02 17:08:28',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.png" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">HK的个人博客</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AWD/" style="font-size: 1.05rem;">AWD<sup>1</sup></a><a href="/tags/CTF/" style="font-size: 1.05rem;">CTF<sup>1</sup></a><a href="/tags/Debug/" style="font-size: 1.05rem;">Debug<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>1</sup></a><a href="/tags/Java%E9%98%B6%E6%AE%B5%E4%B8%80/" style="font-size: 1.05rem;">Java阶段一<sup>2</sup></a><a href="/tags/NONE/" style="font-size: 1.05rem;">NONE<sup>1</sup></a><a href="/tags/Python/" style="font-size: 1.05rem;">Python<sup>1</sup></a><a href="/tags/Python%E5%AD%A6%E4%B9%A0/" style="font-size: 1.05rem;">Python学习<sup>16</sup></a><a href="/tags/%E6%B0%B4%E6%BB%B4%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80%E7%8F%AD/" style="font-size: 1.05rem;">水滴逆向基础班<sup>1</sup></a><a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 1.05rem;">爬虫<sup>1</sup></a><a href="/tags/%E7%88%AC%E8%99%AB%EF%BC%9A%E4%B8%80/" style="font-size: 1.05rem;">爬虫：一<sup>10</sup></a><a href="/tags/%E7%BD%91%E7%AB%99/" style="font-size: 1.05rem;">网站<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">21</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title" itemprop="name headline">离散数学复习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-12-24T11:25:44.000Z" title="发表于 2023-12-24 19:25:44">2023-12-24</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-01-02T09:08:28.379Z" title="更新于 2024-01-02 17:08:28">2024-01-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为长沙"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>长沙</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src=""></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/"><header><h1 id="CrawlerTitle" itemprop="name headline">离散数学复习</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">HK</span><time itemprop="dateCreated datePublished" datetime="2023-12-24T11:25:44.000Z" title="发表于 2023-12-24 19:25:44">2023-12-24</time><time itemprop="dateCreated datePublished" datetime="2024-01-02T09:08:28.379Z" title="更新于 2024-01-02 17:08:28">2024-01-02</time></header><h1 id="命题逻辑的基本概念"><a href="#命题逻辑的基本概念" class="headerlink" title="命题逻辑的基本概念"></a>命题逻辑的基本概念</h1><h2 id="命题"><a href="#命题" class="headerlink" title="命题"></a>命题</h2><pre><code>命题：能判断其真值的陈述句
+真值：真、假(1、0)
+真命题：真值为真的命题
+假命题：真值为假的命题
+原子命题：不能再被分解为更简单的命题
+复合命题：由原子命题通过联结词联接而成的命题
+</code></pre><p>例如：<br>    (¬p∧q )→¬r  这个就为原子命题。同时p、q、r只有0和1两种真值<br>例题：</p>
+<pre><code>下面语句中，哪一个选项为命题
+A.你今天有空吗？    B.请勿随意吐痰！
+C.我正在说谎。      D.2是偶数
+</code></pre><p>如何判断命题？<br>①首先判断他是否为陈述句。<br>②判断它是否有唯一真值。</p>
+<p>A为疑问句排除。B为祈使句排除。<br>C为一个悖论，假设我正在说谎为真，那么我在说谎就为假，相互矛盾这个就是悖论。<br>D为真命题。</p>
+<h2 id="命题连接词"><a href="#命题连接词" class="headerlink" title="命题连接词"></a>命题连接词</h2><p>命题联结词有五种，分别为<code>否定</code>、<code>合取</code>、<code>析取</code>、<code>蕴涵</code>、<code>等价</code>联结词。</p>
+<h3 id="否定。"><a href="#否定。" class="headerlink" title="否定。"></a>否定。</h3><p>符号化为<code>¬</code><br>¬p真值表<br>|p|¬p|<br>|:——-:|:——-:|<br>|0|1|<br>|1|0|</p>
+<h3 id="合取。"><a href="#合取。" class="headerlink" title="合取。"></a>合取。</h3><p>符号化为<code>∧</code><br>与（同时为真则为真）<br>p∧q真值表（p*q）<br>|p|q|p∧q|<br>|:——-:|:——-:|:——-:|<br>|0|0|0|<br>|0|1|0|<br>|1|0|0|<br>|1|1|1|</p>
+<p><code>即……，又……。</code><br><code>不但……，而且……。</code><br><code>虽然……，但是……。</code><br><code>一面……，一面……等。</code></p>
+<h3 id="析取。"><a href="#析取。" class="headerlink" title="析取。"></a>析取。</h3><p>符号化为<code>∨</code><br>或（只要有一个为真结果为真）<br>p∨q真值表(p+q)<br>|p|q|p∨q|<br>|:——-:|:——-:|:——-:|<br>|0|0|0|<br>|0|1|1|<br>|1|0|1|<br>|1|1|1|</p>
+<h3 id="蕴涵。"><a href="#蕴涵。" class="headerlink" title="蕴涵。"></a>蕴涵。</h3><p>符号化为<code>→</code><br>只有在p为1，q为0，结果才为0。<br>p→q真值表<br>|p|q|p→q|<br>|:——-:|:——-:|:——-:|<br>|0|0|1|<br>|0|1|1|<br>|1|0|0|<br>|1|1|1|</p>
+<p><code>只要p，就q。</code><br><code>因为p，所以q。</code><br><code>p仅当q。</code><br><code>只有q才p。</code><br><code>除非q才p。</code><br><code>除非q，否则非p等。</code><br><code>符号化为，p→q。</code></p>
+<h3 id="等价。"><a href="#等价。" class="headerlink" title="等价。"></a>等价。</h3><p>符号化为<code>↔</code><br>只有p和q相同时才为1。<br>p↔q真值表<br>|p|q|p↔q|<br>|:——-:|:——-:|:——-:|<br>|0|0|1|<br>|0|1|0|<br>|1|0|0|<br>|1|1|1|</p>
+<p>出现，<code>当且仅当</code>，<code>……充要条件</code>等</p>
+<h3 id="优先顺序"><a href="#优先顺序" class="headerlink" title="优先顺序"></a>优先顺序</h3><p><code>()、¬、∧、∨、→、↔</code></p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>将下面命题符号化</p>
+<pre><code>A.4不是素数
+B.小智和小红是学生
+C.小智和小红是同学
+D.小智是江苏人或者江西人
+E.小红喜欢唱歌或跳舞
+F.①只要a能被4整除，则a一定能被2整除
+  ②只有a能被4整除，则a才能被2整除
+  ③a能被4整除，仅当a能被2整除
+G.2+3=5的充要条件为根号3为无理数    
+</code></pre><p>解：</p>
+<pre><code>A:
+    p:4是素数
+    符号化为¬p
+B:
+    题目有和
+    p:小智是学生。q：小红为学生
+    符号化为p∧q
+C:
+    虽然题目有和，但是这句话主语为小智和小红。它为原子命题。
+    p:小智和小红是同学。
+    符号化为p
+D:
+    小智是江苏人时就不能为江西人。
+    小智为江西人时就不能为江苏人。
+    这是一个排斥或
+    p:小智是江苏人。q:小智是江西人。
+    所以：
+    1.小智是江苏人且不是江西人。
+    (p∧¬q)
+    2.小智是江西人且不是江苏人。
+    (¬p∧q)
+    两者为或的关系，所以综合一下。
+    (p∧¬q)∨(¬p∧q)
+E:
+    小红喜欢唱歌同时能喜欢跳舞。这里是相容或。
+    p:小红喜欢唱歌。q:小红喜欢跳舞。
+    符号化为p∨q
+F:
+    这里都有a能被4整除和a能被2整除。
+    则，
+    p:a能被4整除。q:a能被2整除。
+    ①只要，则。即为，只要，就。则有p→q。
+    ②只有，才。即为只有q才p。蕴涵。则有q→p。
+    ③仅当。则有p→q。
+G:
+    p:2+3=5 q:根号3为无理数
+    有充要条件，则为p↔q。
+</code></pre><h2 id="命题公式及其赋值"><a href="#命题公式及其赋值" class="headerlink" title="命题公式及其赋值"></a>命题公式及其赋值</h2><h3 id="命题变元"><a href="#命题变元" class="headerlink" title="命题变元"></a>命题变元</h3><p>真值可以变化的命题<br>例：(p∨q)→r<br>p q r真值可为1或0，所以他们都是命题变元。</p>
+<h3 id="合式公式"><a href="#合式公式" class="headerlink" title="合式公式"></a>合式公式</h3><p>将命题变元用联结词或圆括号安一定逻辑关系联结起来的符号串。<br>例：(p∨q)→r<br>这个整体就是一个合式公式<br>同时<code>p∨q</code>和<code>¬p</code>都是合式公式<br><code>这里可以理解为命题变元为数字或者变量，合式公式为四则运算</code></p>
+<h3 id="成真赋值，成假赋值"><a href="#成真赋值，成假赋值" class="headerlink" title="成真赋值，成假赋值"></a>成真赋值，成假赋值</h3><p>p→q真值表<br>|p|q|p→q|<br>|:——-:|:——-:|:——-:|<br>|0|0|1|<br>|0|1|1|<br>|1|0|0|<br>|1|1|1|</p>
+<p>成真赋值：使得p→q这种公式为真的赋值<br>成假赋值：使得p→q这种公式为假的赋值<br>例题：</p>
+<pre><code>写出(¬p∨q)→¬r的真值表，并求他们的成真赋值和成假赋值。
+</code></pre><p>解：<br>(¬p∨q)→¬r<br>按照优先顺序<br>()、¬、∧、∨、→、↔<br>先求()内的，¬p∨q，¬大于∧，先算¬p<br>下面算¬p∨q。∨：都为1则为1<br>¬大于→，先算¬r。<br>最后算→。p→q,只有p为1，q为0，才为0。<br>|p q r|¬p|¬p∨q|¬r|(¬p∨q)→¬r|<br>|:——-:|:——-:|:——-:|:——-:|:——-:|<br>|0 0 0|1|0|1|1|<br>|0 0 1|1|0|0|1|<br>|0 1 0|1|1|1|1|<br>|0 1 1|1|1|0|0|<br>|1 0 0|0|0|1|1|<br>|1 0 1|0|0|0|1|<br>|1 1 0|0|0|1|1|<br>|1 1 1|0|0|0|1|</p>
+<p>成假赋值：(¬p∨q)→¬r为0<br>即0 1 1<br>成真赋值：其他的情况，要写出来</p>
+<h3 id="重言式、矛盾式、可满足式"><a href="#重言式、矛盾式、可满足式" class="headerlink" title="重言式、矛盾式、可满足式"></a>重言式、矛盾式、可满足式</h3><pre><code>设A为任一命题公式
+若A在它的各种赋值下取值均为真，则称A为重言式或永真式。
+若A在它的各种赋值下取值均为假，则称A为矛盾式或永假式。
+若A不是矛盾式，则称为可满足式。
+</code></pre><h1 id="命题逻辑等值演算"><a href="#命题逻辑等值演算" class="headerlink" title="命题逻辑等值演算"></a>命题逻辑等值演算</h1><h2 id="等值式"><a href="#等值式" class="headerlink" title="等值式"></a>等值式</h2><p>设A、B为两个命题公式，若A、B构成的等价式A↔B为重言式，则称A与B是等值的，记作A⇔B<br>常见等值式：</p>
+<pre><code>双重否定律      
+            A⇔¬¬A
+幂等律          
+            A⇔A∨A,A⇔A∧A
+交换律          
+            A∧B⇔B∧A,A∨B⇔B∨A
+结合律          
+            (A∨B)∨C⇔A∨(B∨C)
+            (A∧B)∧C⇔A∧(B∧C)
+分配律          
+            A∧(B∨C)⇔(A∧B)∨(A∧C)（∧对∨的分配律）
+            A∨(B∧C)⇔(A∨B)∧(A∨C)（∨对∧的分配律）
+★德摩根律   析取变合取，合取变析取。取否定
+            ¬(A∨B)⇔¬A∧¬B
+            ¬(A∧B)⇔¬A∨¬B
+吸收律
+            A∨(A∧B)⇔A
+            A∧(A∨B)⇔A
+零律
+            A∨1⇔1
+            A∧0⇔0
+同一律
+            A∧1⇔A
+            A∨0⇔A
+排中律
+            A∨¬A⇔1
+矛盾律
+            A∧¬A⇔0
+★蕴涵等值式
+            A→B⇔¬A∨B
+★等价等值式
+            A↔B⇔(A→B)∧(B→A)
+假言易位
+            A→B⇔¬B→¬A
+等价否定等值式
+            A↔B⇔¬A↔¬B
+归谬论
+            (A→B)∧(A→¬B)⇔¬A
+</code></pre><p>题1：</p>
+<pre><code>推断公式类型Q∨¬((¬P∨Q)∧P)
+</code></pre><p>解：</p>
+<pre><code>Q∨¬((¬P∨Q)∧P)
+其中¬((¬P∨Q)∧P)
+可由德摩根律¬(A∧B)⇔¬A∨¬B
+化为：¬(¬P∨Q)∨¬P
+即：
+Q∨¬((¬P∨Q)∧P)⇔Q∨(¬(¬P∨Q)∨¬P)
+新式：Q∨(¬(¬P∨Q)∨¬P)
+其中¬(¬P∨Q)可由德摩根律中¬(A∨B)⇔¬A∧¬B
+得P∧¬Q
+即Q∨((P∧¬Q)∨¬P)
+再由交换律A∨B⇔B∨A
+得：¬P∨Q∨(P∧¬Q)
+(¬P∨Q)∨(P∧¬Q)
+再由分配律A∨(B∧C)⇔(A∨B)∧(A∨C)
+变为((¬P∨Q)∨P)∧((¬P∨Q)∨¬Q)
+即(¬P∨Q∨P)∧(¬P∨Q∨¬Q)
+式子中(¬P∨P)和(Q∨¬Q)由排中律A∨¬A⇔1
+可得(1∨Q)∧(¬P∨1)
+式子中(1∨Q)和(¬P∨1)，由零律A∨1⇔1
+可得1∧1
+即为1
+则该公式为重言式或者永真式
+</code></pre><p>题2：</p>
+<pre><code>用等值演算法证明¬(P↔Q)⇔(P∨Q)∧¬(P∨Q)
+</code></pre><p>解：</p>
+<pre><code>¬(P↔Q)
+其中P↔Q由等价等值式A↔B⇔(A→B)∧(B→A)
+得P↔Q⇔(P→Q)∧(Q→P)
+即¬(P↔Q)⇔¬((P→Q)∧(Q→P))
+其中(P→Q)和(Q→P)由蕴涵等值式A→B⇔¬A∨B
+得¬P∨Q和¬Q∨P
+即¬((P→Q)∧(Q→P))⇔¬((¬P∨Q)∧(¬Q∨P))
+¬((¬P∨Q)∧(¬Q∨P))中
+由德摩根律¬(A∧B)⇔¬A∨¬B
+得¬(¬P∨Q)∨¬(¬Q∨P)
+¬(¬P∨Q)和¬(¬Q∨P)再由德摩根律¬(A∨B)⇔¬A∧¬B
+得P∧¬Q和Q∧¬P
+即为(P∧¬Q)∨(Q∧¬P)
+再由分配律A∨(B∧C)⇔(A∨B)∧(A∨C)
+得((P∧¬Q)∨Q)∧((P∧¬Q)∨¬P)
+再展开为
+(P∨Q)∧(¬Q∨Q)∧(P∨¬P)∧(¬Q∨¬P)
+再由排中律A∨¬A⇔1和同一律A∧1⇔A
+得(P∨Q)∧1∧1∧(¬Q∨¬P)
+即(P∨Q)∧(¬P∨¬Q)
+其中(¬P∨¬Q)由德摩根律¬(A∨B)⇔¬A∧¬B
+得(P∧Q)∧¬(P∨Q)
+综上
+左式⇔右式
+得证
+</code></pre><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s11.ax1x.com/2023/12/25/piH1vcV.png" alt="麻烦"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s11.ax1x.com/2023/12/25/piH1j10.png" alt="一步到位"></p>
+<h2 id="析取范式与合取范式"><a href="#析取范式与合取范式" class="headerlink" title="析取范式与合取范式"></a>析取范式与合取范式</h2><pre><code>文字：命题变元及其否定
+简单析取式：仅由有限个文字构成的析取式
+    p∨¬q   ¬p∨q∨¬r
+简单合取式：仅由有限个文字构成的合取式
+    p∧¬q   ¬p∧q∧¬r
+析取范式：由有限个简单合取式的析取构成的命题式
+    ( ∧ )∨( ∧ )∨( ∧ )
+合取范式：由有限个简单析取式的合取构成的命题式
+    ( ∨ )∧( ∨ )∧( ∨ )
+</code></pre><p>例题：</p>
+<pre><code>用等值演算法求取求下列公式：
+(P→Q)↔R的合取范式和析取范式
+</code></pre><p>解：<br>①</p>
+<pre><code>先求合取范式
+(P→Q)↔R
+这里P→Q由蕴涵等值式A→B⇔¬A∨B
+    得：¬P∨Q
+即：(¬P∨Q)↔R
+再由等价等值式A↔B⇔(A→B)∧(B→A)
+    得：((¬P∨Q)→R)∧(R→(¬P∨Q))
+这里再由蕴涵等值式A→B⇔¬A∨B
+    得:(¬(¬P∨Q)∨R)∧(¬R∨(¬P∨Q))
+再由德摩根律¬(A∨B)⇔¬A∧¬B
+    得：((P∧¬Q)∨R)∧(¬R∨(¬P∨Q))
+其中((P∧¬Q)∨R)由分配律A∨(B∧C)⇔(A∨B)∧(A∨C)
+    得：(R∨P)∧(R∨¬Q)
+即：(R∨P)∧(R∨¬Q)∧(¬R∨(¬P∨Q))
+即：(R∨P)∧(R∨¬Q)∧(¬R∨¬P∨Q)
+这里我们发现括号内都为∨，括号外都为∧。
+则这个为一个合取范式
+即合取范式为(R∨P)∧(R∨¬Q)∧(¬R∨¬P∨Q)
+</code></pre><p>②</p>
+<pre><code>求析取范式
+(P→Q)↔R
+相同步骤
+由蕴涵等值式A→B⇔¬A∨B
+    得：(¬P∨Q)↔R
+再由等价等值式A↔B⇔(A→B)∧(B→A)
+    得：((¬P∨Q)→R)∧(R→(¬P∨Q))
+这里再由蕴涵等值式A→B⇔¬A∨B
+    得：(¬(¬P∨Q)∨R)∧(¬R∨(¬P∨Q))
+再由德摩根律¬(A∨B)⇔¬A∧¬B
+    得：((P∧¬Q)∨R)∧(¬R∨(¬P∨Q))
+即：((P∧¬Q)∨R)∧(¬R∨¬P∨Q)
+---------------------------------
+再由分配律
+设A为P∧¬Q
+则有(A∨R)∧(¬R∨¬P∨Q)
+这里用到&quot;一步到位&quot;图片中的方法
+即：(A∧¬R)∨(A∧¬P)∨(A∧Q)∨(R∧¬R)∨(R∧¬P)∨(R∧Q)
+即(P∧¬Q∧¬R)∨(P∧¬Q∧¬P)∨(P∧¬Q∧Q)∨(R∧¬R)∨(R∧¬P)∨(R∧Q)
+其中(P∧¬P)和(R∧¬R)和(¬Q∧Q)为0，0再合取其他公式都为0
+即(P∧¬Q∧¬R)∨0∨0∨0∨(R∧¬P)∨(R∧Q)
+即(P∧¬Q∧¬R)∨(R∧¬P)∨(R∧Q)
+这里括号内都为合取，括号外都为析取
+这个为析取范式
+即析取范式为(P∧¬Q∧¬R)∨(R∧¬P)∨(R∧Q)
+</code></pre><h2 id="主析取范式与主合取范式"><a href="#主析取范式与主合取范式" class="headerlink" title="主析取范式与主合取范式"></a>主析取范式与主合取范式</h2><p>极小项</p>
+<pre><code>①简单合取式
+②每个命题变元和它的否定式恰好出现仅出现一次
+③命题变元或它的否定式按照下标从小到大排列
+</code></pre><p>极大项</p>
+<pre><code>①简单析取式
+②每个命题变元和它的否定式恰好出现仅出现一次
+③命题变元或它的否定式按照下标从小到大排列
+</code></pre><p>包含p、q的极小项和极大项<br>||极小项|||极大项||<br>|:——-:|:——-:|:——-:|:——-:|:——-:|:——-:|<br>|公式|成真赋值|名称|公式|成假赋值|名称|<br>|¬p∧¬q|0 0|m<sub>0</sub>|p∨q|0 0|M<sub>0</sub>|<br>|¬p∧q|0 1|m<sub>1</sub>|p∨¬q|0 1|M<sub>1</sub>|<br>|p∧¬q|1 0|m<sub>2</sub>|¬p∨q|1 0|M<sub>2</sub>|<br>|p∧q|1 1|m<sub>3</sub>|¬p∨¬q|1 1|M<sub>3</sub>|</p>
+<p>包含p、q、r的极小项和极大项</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">极小项</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">极大项</th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">公式</td>
+<td style="text-align:center">成真赋值</td>
+<td style="text-align:center">名称</td>
+<td style="text-align:center">公式</td>
+<td style="text-align:center">成假赋值</td>
+<td style="text-align:center">名称</td>
+</tr>
+<tr>
+<td style="text-align:center">¬p∧¬q∧¬r</td>
+<td style="text-align:center">0 0 0</td>
+<td style="text-align:center">m<sub>0</sub></td>
+<td style="text-align:center">p∨q∨r</td>
+<td style="text-align:center">0 0 0</td>
+<td style="text-align:center">M<sub>0</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">¬p∧¬q∧r</td>
+<td style="text-align:center">0 0 1</td>
+<td style="text-align:center">m<sub>1</sub></td>
+<td style="text-align:center">p∨q∨¬r</td>
+<td style="text-align:center">0 0 1</td>
+<td style="text-align:center">M<sub>1</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">¬p∧q∧¬r</td>
+<td style="text-align:center">0 1 0</td>
+<td style="text-align:center">m<sub>2</sub></td>
+<td style="text-align:center">p∨¬q∨r</td>
+<td style="text-align:center">0 1 0</td>
+<td style="text-align:center">M<sub>2</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">¬p∧q∧r</td>
+<td style="text-align:center">0 1 1</td>
+<td style="text-align:center">m<sub>3</sub></td>
+<td style="text-align:center">p∨¬q∨¬r</td>
+<td style="text-align:center">0 1 1</td>
+<td style="text-align:center">M<sub>3</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">p∧¬q∧¬r</td>
+<td style="text-align:center">1 0 0</td>
+<td style="text-align:center">m<sub>4</sub></td>
+<td style="text-align:center">¬p∨q∨r</td>
+<td style="text-align:center">1 0 0</td>
+<td style="text-align:center">M<sub>4</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">p∧¬q∧r</td>
+<td style="text-align:center">1 0 1</td>
+<td style="text-align:center">m<sub>5</sub></td>
+<td style="text-align:center">¬p∨q∨¬r</td>
+<td style="text-align:center">1 0 1</td>
+<td style="text-align:center">M<sub>5</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">p∧q∧¬r</td>
+<td style="text-align:center">1 1 0</td>
+<td style="text-align:center">m<sub>6</sub></td>
+<td style="text-align:center">¬p∨¬q∨r</td>
+<td style="text-align:center">1 1 0</td>
+<td style="text-align:center">M<sub>6</sub></td>
+</tr>
+<tr>
+<td style="text-align:center">p∧q∧r</td>
+<td style="text-align:center">1 1 1</td>
+<td style="text-align:center">m<sub>7</sub></td>
+<td style="text-align:center">¬p∨¬q∨¬r</td>
+<td style="text-align:center">1 1 1</td>
+<td style="text-align:center">M<sub>7</sub></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="主析取范式"><a href="#主析取范式" class="headerlink" title="主析取范式"></a>主析取范式</h3><p>所有简单合取式都是极小项的取范式</p>
+<pre><code>(p∧q)∨(¬p∧q)
+其中(p∧q)，其内有p、q所以为一个极小项
+(¬p∧q)同样包括p、q所以为另一个极小项
+所以(p∧q)∨(¬p∧q)为主析取范式
+一般用名称表示
+其中(p∧q)，因为极小项对应成真赋值，要使(p∧q)最后真值为1，则p、q赋值都为1，则表示为m&lt;sub&gt;3&lt;/sub&gt;
+而(¬p∧q)，要使最后真值为1，那么p、q取值为0、1，则表示为m&lt;sub&gt;1&lt;/sub&gt;
+则公式(p∧q)∨(¬p∧q)表示为m&lt;sub&gt;3&lt;/sub&gt;∨m&lt;sub&gt;1&lt;/sub&gt;
+
+(p∧q)∨¬p
+括号外为析取括号内为合取则该公式为析取范式
+而(p∧q)，其中包括了p、q，所以为极小项
+而¬p，只有p，所以不是一个极小项
+则该公式不是一个主析取范式
+</code></pre><h3 id="主合取范式"><a href="#主合取范式" class="headerlink" title="主合取范式"></a>主合取范式</h3><p>所有简单析取式都是极大项的取范式</p>
+<pre><code>(p∨q)∧(¬p∨q)
+括号内为析取括号外为合取，则它为合取范式
+因为该公式只包括p、q两个命题变元
+则(p∨q)为一个极大项
+同理(¬p∨q)也为一个极大项
+所以该公式为主合取范式
+其中(p∨q)为极大项，对应的是成假赋值，则要使其真值为0，则p、q赋值为0、0，则表示为M&lt;sub&gt;0&lt;/sub&gt;
+同理(¬p∨q)为极大项，对应的是成假赋值，则要使其真值为0，则p、q赋值为1、0，则表示为M&lt;sub&gt;2&lt;/sub&gt;
+则公式(p∨q)∧(¬p∨q)表示为M&lt;sub&gt;0&lt;/sub&gt;∧M&lt;sub&gt;2&lt;/sub&gt;
+
+(p∨q)∧¬p
+括号内为析取括号外为合取，则它为合取范式
+因为该公式只包括p、q两个命题变元
+则(p∨q)为一个极大项
+但是¬p却不是一个极大项
+则公式不为主合取范式
+</code></pre><h3 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h3><p>题1：</p>
+<pre><code>利用真值表法，按P、Q、R顺序求命题公式：(P∧R)→(¬Q∨R)的主析取范式。
+</code></pre><p>解：</p>
+<pre><code>(P∧R)→(¬Q∨R)中
+(P∧R)单独一个，∧为合取，只有同时为1，真值才为1
+(¬Q∨R)中，¬优先级更高，先算¬Q。
+下面才是(¬Q∨R)，∨为析取，只有在两者都为0才为0
+最后为(P∧R)→(¬Q∨R)，→为蕴涵，前面为1后为0时真值为0
+</code></pre><p>画一个P、Q、R的真值表<br>|P Q R|P∧R|¬Q|¬Q∨R|(P∧R)→(¬Q∨R)|<br>|:—-:|:—-:|:—-:|:—-:|:—-:|<br>|0 0 0|0|1|1|1|<br>|0 0 1|0|1|1|1|<br>|0 1 0|0|0|0|1|<br>|0 1 1|0|0|1|1|<br>|1 0 0|0|1|1|1|<br>|1 0 1|1|1|1|1|<br>|1 1 0|0|0|0|1|<br>|1 1 1|1|0|1|1|</p>
+<p>则该命题公式的成真赋值为000、001、010、011、100、101、110、111<br>主析取范式：所有简单合取式都是极小项<br>而极小项对应的时成真赋值，则由成真赋值求下标<br>则主析取范式为m<sub>0</sub>∨m<sub>1</sub>∨m<sub>2</sub>∨m<sub>3</sub>∨m<sub>4</sub>m<sub>5</sub>∨m<sub>6</sub>∨m<sub>7</sub></p>
+<p>题2：</p>
+<pre><code>含三个命题变元的命题公式的主合取范式为M&lt;sub&gt;0&lt;/sub&gt;∧M&lt;sub&gt;3&lt;/sub&gt;∧M&lt;sub&gt;4&lt;/sub&gt;∧M&lt;sub&gt;6&lt;/sub&gt;∧M&lt;sub&gt;7&lt;/sub&gt;，则他的主析取范式为？表示成m∨n的形式。
+</code></pre><p>M<sub>0</sub>∧M<sub>3</sub>∧M<sub>4</sub>∧M<sub>6</sub>∧M<sub>7</sub><br>解：</p>
+<pre><code>设m_i与M_i是极小项和极大项，则¬m_i⇔M_i,¬M_i⇔m_i
+及不是极小项的都是极大项，不是极大项的都是极小项
+因为这里是三个命题变元所以下标为0-7
+主合取范式就为极大项则极大项下标为0、3、4、6、7
+则极小项下标为1、2、5
+则主析取范式为m&lt;sub&gt;1&lt;/sub&gt;∨m&lt;sub&gt;2&lt;/sub&gt;∨m&lt;sub&gt;5&lt;/sub&gt;
+</code></pre><p>题3：</p>
+<pre><code>求命题公式(P→(Q∨R))→¬Q的主析取范式和主合取范式。
+</code></pre><p>解：</p>
+<pre><code>求主析取范式和主合取范式有真值表法和等值演算法
+这里我们使用等值演算法
+(P→(Q∨R))→¬Q
+先求主析取范式
+式子中，括号内外都有蕴涵→，使用蕴涵等值式A→B⇔¬A∨B
+得(¬P∨(Q∨R))→¬Q，同理
+得¬(¬P∨(Q∨R))∨¬Q
+由德摩根律¬(A∨B)⇔¬A∧¬B
+得(P∧¬(Q∨R))∨¬Q
+即(P∧¬Q∧¬R)∨¬Q
+其中(P∧¬Q∧¬R)为一个简单合取式，同时是一个极小项
+因此只要让¬Q变为一个极小项就可以了
+这里采用同一律A∧1⇔A
+变为(P∧¬Q∧¬R)∨(1∧¬Q∧1)。这里(1∧¬Q∧1)和¬Q是等价的
+其中(1∧¬Q∧1)，使用排中律A∨¬A⇔1，前面的1变为P∨¬P，后面为R∨¬R
+即为(P∧¬Q∧¬R)∨((P∨¬P)∧¬Q∧(R∨¬R))
+下面再使用分配律
+变为(P∧¬Q∧¬R)∨  (P∧¬Q∧R)∨(P∧¬Q∧¬R)∨(¬P∧¬Q∧R)∨(¬P∧¬Q∧¬R)
+其中(P∧¬Q∧¬R)重复则变为
+(P∧¬Q∧R)∨(P∧¬Q∧¬R)∨(¬P∧¬Q∧R)∨(¬P∧¬Q∧¬R)
+括号外都是析取括号内都为合取，则他是一个析取范式，每个括号内都为一个极小项，则它为主析取范式
+极小项对应成真赋值使得结果为1
+则有101、100、001、000
+及为m_ 5、m_4、m_1、m_0
+则公式为m_ 0∨m_1∨m_4∨m_5
+</code></pre><p>主析取范式为：m<sub>0</sub>∨m<sub>1</sub>∨m<sub>4</sub>∨m<sub>5</sub><br>则根据不是极小项就是极大项，那么主合取范式为M<sub>2</sub>∧M<sub>3</sub>∧M<sub>6</sub>∧M<sub>7</sub></p>
+<h2 id="联结词的完备集"><a href="#联结词的完备集" class="headerlink" title="联结词的完备集"></a>联结词的完备集</h2><p>设S是一个联结词集合，如果任一命题公式可以由仅含S中的联结词构成的公式表示，则称S是一个联结词完备集。</p>
+<p>与非联结词和或非联结词</p>
+<p>与非联结词</p>
+<pre><code>↑   p↑q    p↑q⇔¬(p∧q)
+</code></pre><p>或非联结词</p>
+<pre><code>↓   p↓q    p↓q⇔¬(p∨q)
+</code></pre><p>下面都是联结词的完备集<br>S<sub>1</sub>={¬,∧,∨}<br>S<sub>2</sub>={¬,∧,∨,→}<br>S<sub>3</sub>={¬,∧,∨,→,↔}<br>S<sub>4</sub>={¬,∧}<br>S<sub>5</sub>={¬,∨}<br>S<sub>6</sub>={¬,→}<br>S<sub>7</sub>={↑}<br>S<sub>8</sub>={↓}</p>
+<p>从S<sub>1</sub>到S<sub>5</sub>中只要集合内有¬和(∨或∧)就是个联结词完备集<br>S<sub>6</sub>,其中蕴涵等值式A→B⇔¬A∨B可拆解否定和析取形式则S<sub>6</sub>是一个联结词完备集<br>S<sub>7</sub>中p↑q⇔¬(p∧q)，可以拆解为否定和合取形式，则为联结词完备集<br>到S<sub>8</sub>同理</p>
+<h1 id="命题逻辑的推理理论"><a href="#命题逻辑的推理理论" class="headerlink" title="命题逻辑的推理理论"></a>命题逻辑的推理理论</h1><h2 id="推理的相关公式"><a href="#推理的相关公式" class="headerlink" title="推理的相关公式"></a>推理的相关公式</h2><p>设A和B为两个命题公式，当且仅当A→B是重言式时，则称A可推出B或B是前提A的有效结论，记作A⇒B</p>
+<p>命题公式A<sub>1</sub>,A<sub>2</sub>,……,A<sub>k</sub>推出B的推理正确当且仅当A<sub>1</sub>∧A<sub>2</sub>∧……∧A<sub>k</sub>→B为重言式</p>
+<p>推理的形式结构：</p>
+<p>前提：A<sub>1</sub>,A<sub>2</sub>,……,A<sub>k</sub><br>结论：B</p>
+<p>相关公式：</p>
+<pre><code>①A⇒(A∨B)                            附加律
+②(A∧B)⇒A                            化简律
+③(A→B)∧A⇒B                          假言推理
+④(A→B)∧¬B⇒¬A                        拒取式
+⑤(A∨B)∧¬B⇒A                         析取三段论
+⑥(A→B)∧(B→C)⇒(A→C)                  假言三段论
+⑦(A↔B)∧(B↔C)⇒(A↔C)                  等价三段论
+⑧(A→B)∧(C→D)∧(A∨C)⇒(B∨D)           构造性二难
+⑨(A→B)∧(C→D)∧(¬B∨¬D)⇒(¬A∨¬C)       破坏性二难附加律
+</code></pre><p>题1：</p>
+<p>求一个命题公式A<sub>1</sub>,A<sub>2</sub>,A<sub>3</sub>推B的推理正确当且仅当<strong><em>__</em></strong>为重言式。</p>
+<p>解：<br>因为有命题公式A<sub>1</sub>,A<sub>2</sub>,……,A<sub>k</sub>推出B的推理正确当且仅当A<sub>1</sub>∧A<sub>2</sub>∧……∧A<sub>k</sub>→B为重言式<br>则这里答案为<sub>1</sub>∧A<sub>2</sub>∧A<sub>3</sub>→B</p>
+<p>题2：</p>
+<pre><code>下面不正确的是______
+A.¬Q∧(P→Q)⇒¬P       B.P⇒P∨Q
+C.P→Q⇒¬P→¬Q         D.(P→Q)∨¬Q⇒¬P
+</code></pre><p>解：</p>
+<pre><code>A.由拒取式(A→B)∧¬B⇒¬A，A正确
+B.由附加律A⇒(A∨B)，正确
+C.由假言易位A→B⇔¬B→¬A，正确
+D.由拒取式(A→B)∧¬B⇒¬A，原式为析取则错误
+选D
+</code></pre><h2 id="自然推理系统P"><a href="#自然推理系统P" class="headerlink" title="自然推理系统P"></a>自然推理系统P</h2><p>题1：<br>构造下面推理的证明</p>
+<pre><code>前提：p∨q,p→¬r,s→t,¬s→r,¬t
+结论：q
+</code></pre><p>要证明q，这里就需要p，需要p这里就需要r，需要r，这里就需要s，需要s，这里就只需要t，需要t这里有一个¬t<br>证明：</p>
+<pre><code>①¬t         前提引入
+①s→t        前提引入
+③¬s         ①②拒取式(A→B)∧¬B⇒¬A
+④¬s→r       前提引入
+⑤r          ③④假言推理(A→B)∧A⇒B
+⑥p→¬r       前提引入
+⑦¬p         ⑤⑥拒取式(A→B)∧¬B⇒¬A
+⑧p∨q        前提引入
+⑨q          ⑦⑧析取三段论(A∨B)∧¬B⇒A
+得证q是有效结论
+</code></pre><p>题2：<br>在自然推理系统中，构造并证明下面推理</p>
+<pre><code>如果小王是理科生，则他的数学成绩一定很好。如果小王不是文科生，则他一定是理科生。小王的数学成绩不好。所以小王是文科生。
+</code></pre><p>解：</p>
+<pre><code>设原子命题
+p：小王是理科生
+q: 小王数学成绩很好
+r: 小王是文科生
+如果小王是理科生，则他的数学成绩一定很好。
+即为p→q
+如果小王不是文科生，则他一定是理科生。
+即为¬r→p
+小王的数学成绩不好。
+即为¬q
+所以小王是文科生。
+即为r
+整理
+前提：p→q,¬r→p,¬q
+结论：r
+</code></pre><p>证明：<br>要证明r就需要p需要p就需要q，需要q有个¬q</p>
+<pre><code>①¬q          前提引入
+②p→q         前提引入
+③¬p          ①②拒取式(A→B)∧¬B⇒¬A
+④¬r→p        前提引入
+⑤r           ③④拒取式(A→B)∧¬B⇒¬A
+得证
+</code></pre><p>题3:<br>用推理的形式结构证明：A∨B→C∧D,D∨E→P⇒A→P</p>
+<p>解：</p>
+<pre><code>前提：A∨B→C∧D,D∨E→P
+结论：A→P
+</code></pre><p>证明：（附加前提法，结论有蕴含）（A→P中A为前提P为结论，这里只需要证明P即可）</p>
+<pre><code>①A               附加前提引入
+②A∨B            ①附加律A⇒(A∨B)
+③A∨B→C∧D        前提引入
+④C∧D            ②③假言推理(A→B)∧A⇒B
+⑤D              ④化简律(A∧B)⇒A
+第⑤中D∨E→P需要D而不是C所以化简出D
+⑥D∨E            ⑤附加律A⇒(A∨B)
+⑦D∨E→P          前提引入
+⑧P              ⑥⑦假言推理(A→B)∧A⇒B
+得证P是有效结论
+即A→P为有效结论
+</code></pre><p>题4：</p>
+<pre><code>如果小张守第一垒并且小李向B队投球，则A队取胜；
+或者A队未取胜，或者A队成为联赛第一名；
+A队没有成为联赛第一名；
+小张守第一垒。
+因此，小李没向B队投球。
+</code></pre><p>解：</p>
+<pre><code>设原子命题
+p: 小张守第一垒
+q: 小李向B队投球
+r: A队取胜
+s: A队成为联赛第一名
+</code></pre><p>前提：</p>
+<pre><code>如果小张守第一垒并且小李向B队投球，则A队取胜
+并且。如果……就……
+即为：(p∧q)→r
+或者A队未取胜，或者A队成为联赛第一名；
+或
+即为：¬r∨s
+A队没有成为联赛第一名
+即为：¬s
+小张守第一垒。
+即为：p
+整理：(p∧q)→r，¬r∨s，¬s，p
+</code></pre><p>结论：</p>
+<pre><code>因此，小李没向B队投球。
+即为:¬q
+</code></pre><p>证明：</p>
+<pre><code>要求¬q,得有q，要有q在(p∧q)→r中
+要证明q得有两个条件p和r
+这种方法麻烦
+---------------------
+使用附加前提法（结论中没有蕴涵式）
+---------------------------
+使用：归谬法(结论中需要两个或者以上条件)
+归谬法：把结论否定作为前提在和已有的推理，最后得到一个矛盾，则该结论为有效结论
+=================================
+①q          结论的否定引入
+②p          前提引入
+③p∧q        ①②合取
+④(p∧q)→r    前提引入  
+⑤r          ③④假言推理(A→B)∧A⇒B
+⑥¬r∨s       前提引入
+⑦s          ⑤⑥析取三段论(A∨B)∧¬B⇒A
+⑧¬s         前提引入
+⑨s∧¬s       ⑦⑧合取
+这里得到一个矛盾，所以¬p是一个有效结论
+</code></pre><h1 id="谓词逻辑基本概念"><a href="#谓词逻辑基本概念" class="headerlink" title="谓词逻辑基本概念"></a>谓词逻辑基本概念</h1><h2 id="谓词逻辑命题符号化"><a href="#谓词逻辑命题符号化" class="headerlink" title="谓词逻辑命题符号化"></a>谓词逻辑命题符号化</h2><p>谓词逻辑命题符号化的三个基本要素：个体词、谓词、量词</p>
+<p>个体词：</p>
+<pre><code>个体词：研究对象中可以独立存在的具体的或抽象的客体   例如：小智 中国 3
+个体常项：表示具体或特定客体的个体词
+个体变项：表示抽象或泛指的个体词
+个体域：个体变项的取值范围
+全总个体域：由宇宙间一切事物组成的个体域
+</code></pre><p>谓词：刻画个体词性质及个体词之间相互关系的词</p>
+<p>例：</p>
+<pre><code>4是有理数
+其中4是个体词也是个体常项，“是有理数为”谓词，记为F
+这句话符号化为：F(4)
+x是有理数
+“是有理数”是谓词记为F
+则符号化为：F(x)
+小霞和小智是同学
+小霞和小智都是个体词和个体常项
+“和是同学”是谓词记为H
+a表示小霞，b表示小智
+则符号化为：H(a，b)
+</code></pre><p>题一：<br>将下面命题在谓词逻辑中用谓词符号化，并讨论他们真值</p>
+<pre><code>1.只有2是素数，4才是素数
+2.如果5大于4，则4大于6
+</code></pre><p>解：</p>
+<pre><code>1.只有2是素数，4才是素数
+设1元谓词F(x):x为素数，命题可以符号化为F(2)和F(4)
+题目中有只有……才……。只有q才p。
+则可以符号化为F(4)→F(2)。
+4是和数不是素数，则F(4)为假
+蕴含中只有前面为1后面为0，真值才为0
+所以这里前面为0，则真值为1
+及命题为真
+2.如果5大于4，则4大于6
+大于为谓词，大于前后都有个体词
+这里设二元谓词，G(x,y):x&gt;y
+题目可变为，G(5,4)，G(4,6)
+如果……则……为蕴含
+即：G(5,4)→G(4,6)
+G(5,4)真值为1
+G(4,6)真值为0
+则命题真值为0
+</code></pre><p>量词：个体之间数量关系的词</p>
+<pre><code>全称量词：∀     ∀x  表示个体域中所有的x
+在题目中出现：一切的、所有的、每一个、任意的、凡、都。等等
+存在量词：∃     ∃x  表示个体域中有一个个体x
+题目中出现：存在、有一个、有的、至少有一个等
+</code></pre><p>题2：</p>
+<pre><code>命题“所有的人都长着长头发”，令M(x)：x是人，G(x):x长者长头发。则该命题符号化为()
+A.∀x(M(x)→G(x))     B.∃x(M(x)∧G(x))
+C.∃x(M(x)∨G(x))     D.∀x(M(x)∧G(x)) 
+</code></pre><p>解：</p>
+<pre><code>题目中有所有的，则使用全称量词。则BC排除
+命题同样可以理解为是人就长着长头发
+如果……就……使用联结词蕴含
+则题目选A
+</code></pre><p>题3：</p>
+<pre><code>令M(x):x是人G(x):x登上过月球。则命题“有的人登上过月球。”符号化()
+A.∀x(M(x)∧G(x))      B.∃x(M(x)∧G(x))
+C.∀x(M(x)∨G(x))       D.∀x(M(x)→G(x))
+</code></pre><p>解：</p>
+<pre><code>题目中有&quot;有的&quot;则使用存在量词
+则ACD排除
+</code></pre><p>总结：全称量词中间连接使用蕴含。即：∀→<br>    存在量词中间使用合取。即：∃∧</p>
+<p>题4：</p>
+<pre><code>设有命题T(x):x是火车，C(x)：x是汽车，Q(x,y):x跑得比y快那么命题“有的汽车比一些火车跑得快”得逻辑表达式为：_______
+</code></pre><p>解：</p>
+<pre><code>有的汽车比一些火车跑得快
+命题中有，“有的”，这个为存在量词即∃x
+汽车为C(x)
+一些：同样要使用存在量词∃y
+火车表示为T(y)
+跑得快这里为Q(x,y)
+因为是存在量词，中间使用合取
+则，逻辑表达式为：
+∃x(C(x)∧∃y(T(y)∧Q(x,y)))
+</code></pre><p>题5：</p>
+<pre><code>设F(x):x是运动员，G(x):x是大学生，命题“不是所有运动员都是大学生”谓词符号化为_______
+</code></pre><p>解：</p>
+<pre><code>不是所有运动员都是大学生
+不是先忽略掉则为
+所有运动员都是大学生
+“所有的”为全称量词∀x
+运动员：F(x)
+大学生：G(x)
+则有∀x(F(x)→G(x))即为所有运动员都是大学生
+因为是全称量词所以中间使用蕴含
+则不是所有运动员都是大学生
+为¬∀x(F(x)→G(x))
+</code></pre><p>解2：</p>
+<pre><code>不是所有运动员都是大学生
+即为
+有的运动员不是大学生
+有的，存在量词∃x
+不是大学生，其中是大学生为G(x)，则不是为¬G(x)
+其他都一个思路
+则有∃x(F(x)∧¬G(x))
+</code></pre><h2 id="谓词逻辑公式及解释"><a href="#谓词逻辑公式及解释" class="headerlink" title="谓词逻辑公式及解释"></a>谓词逻辑公式及解释</h2><p>在公式∀xA和∃xA中，称x为指导变元，A为量词的辖域。在∃x和∀x的辖域中，x的所有出现都称作约束出现，A中不是约束出现的其他变项均称作自由出现</p>
+<p>题1：<br>指出下列各公式中的指导变元，各量词的辖域，自由出现以及约束出现的个体变项。</p>
+<pre><code>1.∀x(F(x,y)→G(x,z))
+2.∀x(F(x)→G(x))→∃y(H(x)∧L(x,y,z))
+</code></pre><p>解：</p>
+<pre><code>1.∀x中x是指导变元   ∀的辖域为A=(F(x,y)→G(x,z))
+在A中，x是约束出现，约束出现两次
+而y和z不是指导变元，都是自由出现各自由出现一次
+2.∀x和∃y，∀的指导变元为x，∀的辖域为(F(x)→G(x))
+x是约束出现，y为自由出现，出现一次
+∃的指导变元为y，∃的辖域为(H(x)∧L(x,y,z))
+y是约束出现，x、z为自由出现，x自由出现两次，z自由出现一次
+x约束出现1次，自由出现2次；y自由出现1次，约束出现1次；z自由出现1次
+</code></pre><p>设A为一公式<br>若A在任何情况下的任何赋值均为<code>真</code>，则称A为<code>永真式</code>或<code>逻辑有效式</code><br>若A在任何情况下的任何赋值均为<code>假</code>，则称A为<code>矛盾式</code>或<code>永假式</code><br>若至少存在一个情况下的一个赋值使A为真，则称A为<code>可满足式</code></p>
+<p>当多个量词出现时，他们的顺序一般不能随意调换<br>例如：∀x∃y和∃y∀x。两者不等价</p>
+<p>题2：</p>
+<pre><code>设论域D=&#123;a,b&#125;,与公式∃xA(x)等价的命题公式为()
+A.A(a)∧A(b)     B.A(a)→A(b)
+C.A(a)∨A(b)      D.A(b)→A(a)
+</code></pre><p>解：</p>
+<pre><code>论域即个体域
+D=&#123;a,b&#125;,与公式∃xA(x)
+将a和b带入得A(a)和A(b)
+下面考虑联结词
+∃xA(x)，存在量词，代表有的、至少有一个
+析取代表或，相当于至少有一个为真时真知为1
+则使用析取
+则C.A(a)∨A(b) 
+如果题目改为∀xA(x)
+∀为所有的，都要满足
+则使用合取作为联结词
+则为A.A(a)∧A(b)
+</code></pre><h1 id="谓词逻辑等值演算与推理"><a href="#谓词逻辑等值演算与推理" class="headerlink" title="谓词逻辑等值演算与推理"></a>谓词逻辑等值演算与推理</h1><h2 id="谓词逻辑等值式与置换规则"><a href="#谓词逻辑等值式与置换规则" class="headerlink" title="谓词逻辑等值式与置换规则"></a>谓词逻辑等值式与置换规则</h2><p>设A、B是谓词逻辑中任意两个公式，若A↔B是永真式，则称A与B等值，记作A⇔B，称A⇔B是等值式</p>
+<p>下面给出谓词逻辑中的基本等值式<br>1.量词否定等值式<br><code>①¬∀xA(x)⇔∃x¬A(x)</code><br><code>②¬∃xA(x)⇔∀x¬A(x)</code><br>2.量词辖域收缩与扩张等值式</p>
+<pre><code>①∀x(A(x)∨B)⇔∀xA(x)∨B
+∀x(A(x)∧B)⇔∀xA(x)∧B
+∀x(A(x)→B)⇔∀xA(x)→B
+∀x(A(x)→B)⇔B→∀xA(x)
+②∃x(A(x)∨B)⇔∃xA(x)∨B
+∃x(A(x)∧B)⇔∃xA(x)∧B
+∃x(A(x)→B)⇔(∃xA(x))→B
+∃x(B→A(x))⇔B→∃xA(x)
+</code></pre><p>3.量词分配等值式</p>
+<pre><code>①∀x(A(x)∧B(x))⇔∀xA(x)∧∀xB(x)
+∀∧
+②∃x(A(x)∨B(x))⇔∃xA(x)∨∃xB(x)
+∃∨
+③∀xA(x)∨∀xB(x)⇒∀x(A(x)∨B(x))
+④∃x(A(x)∧B(x))⇒∃xA(x)∧∃xB(x)
+</code></pre><p>4.命题逻辑中的重言式的代换实例都是谓词逻辑中的永真式</p>
+<pre><code>∀xF(x)⇔¬¬∀xF(x)
+∀x∃y(F(x,y)→G(x,y))⇔¬¬∀x∃y(F(x,y)→G(x,y))
+F(x)→G(y)⇔F(x)∨G(y)（蕴含等值式来推导）
+∀x(F(y)→G(y))→∃zH(z)⇔¬∀x(F(x)→G(y))∨∃zH(z)
+</code></pre><p>题1：<br>设个体域D={a,b,,c}，将下列公式的量词消去</p>
+<pre><code>1.∀x(F(x)→G(x))
+2.∀x(F(x)∨∃yG(y))
+3.∃x∀yF(x,y)
+</code></pre><p>解1：</p>
+<pre><code>先将全称量词消去再将a,b,c放入公式
+即F(x)→G(x)
+即消去量词，得
+F(a)→G(a)   F(b)→G(b)   F(c)→G(c)
+全称量词使用合取来联结
+则
+(F(a)→G(a))∧(F(b)→G(b))∧(F(c)→G(c))
+</code></pre><p>解2：</p>
+<pre><code>括号外有全称量词，括号内有存在量词
+先进行辖域收缩∀x(A(x)∨B)⇔∀xA(x)∨B
+即∀x(F(x)∨∃yG(y))⇔∀xF(x)∨∃yG(y)
+∀xF(x)∨∃yG(y)
+消量词
+∀xF(x)和∃yG(y)
+为F(a)∧F(b)∧F(c)和G(a)∨G(b)∨G(c)
+即(F(a)∧F(b)∧F(c))∨(G(a)∨G(b)∨G(c))
+</code></pre><p>解3：</p>
+<pre><code>∃x∀yF(x,y)
+先消去后面的
+即先消全称量词∀
+得
+∃x(F(x,a)∧F(x,b)∧F(x,c))
+再消存在量词∃
+得
+(F(a,a)∧F(a,b)∧F(a,c))∨(F(b,a)∧F(b,b)∧F(b,c))∨(F(c,a)∧F(c,b)∧F(c,c))
+</code></pre><p>题2：</p>
+<pre><code>设B是不含变元x的公式，谓词公式(∃x)(B→A(x))等价于
+A.B→(∃x)A(x)         B.B→(∀x)A(x)
+C.(∃x)A(x)→B          D.B→A(x)
+</code></pre><p>解：</p>
+<pre><code>∃x(B→A(x))⇔B→∃xA(x)
+</code></pre><p>题3：<br>谓词公式∀x∃yP(x,y)的真值为<strong>_</strong>,其中,P(x,y):x=y,定义域:D={1,2}</p>
+<p>解：</p>
+<pre><code>P(x,y):x=y即x=y时真值为1
+定义域:D=&#123;1,2&#125;即个体域
+∀x∃yP(x,y)有两个量词
+先将后面的消去即先消去∃
+即∀x(P(x,1)∨P(x,2))
+再消去∀
+即(P(1,1)∨P(1,2))∧(P(2,1)∨P(2,2))
+      1      0        0       1
+(1∨0)∧(0∨1)
+即1∧1
+即1
+</code></pre><h2 id="谓词逻辑前束范式"><a href="#谓词逻辑前束范式" class="headerlink" title="谓词逻辑前束范式"></a>谓词逻辑前束范式</h2><p>前束范式：具有以下形式Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>……Q<sub>k</sub>x<sub>k</sub>B的谓词逻辑公式</p>
+<p>其中Q<sub>i</sub>(1≤i≤k)即∀或∃  B不含量词<br>例如：<br>∀x∀y(F(x)∧G(y)→H(x,y))      是前束范式<br>∀x(F(y)→∃y(G(y)∧H(x,y)))    不是前束范式<br>前面为∀后面B即(F(y)→∃y(G(y)∧H(x,y)))有∃则不是前束范式</p>
+<p>前束范式存在定理：谓词逻辑中的任何公式都存在等值的前束范式</p>
+<p>题1：</p>
+<pre><code>下列哪项为前束范式()
+A.¬∀xF(x)                 B.∃xF(x)→∀xG(x)
+C.∃x∃y(F(x,t)→G(x,y))     D.∃xF(x)→H(x,y)
+</code></pre><p>解：</p>
+<pre><code>A.¬∀xF(x),全称量词∀前有¬则不是前束范式
+B.∃xF(x)→∀xG(x)，∃在开头而∀不在开头则不是前束范式
+C.∃x∃y(F(x,t)→G(x,y))∃都在开头F(x,t)→G(x,y)不包括量词，则是一个前束范式
+</code></pre><p>题2：<br>求下列各式的前束范式</p>
+<p>1.∀xF(x)∧¬∃xG(x)<br>2.∀x<sub>1</sub>F(x<sub>1</sub>,x<sub>2</sub>)→∃x<sub>2</sub>G(x<sub>2</sub>)</p>
+<p>解：<br>转化方法：</p>
+<pre><code>1.把条件(蕴含)或双条件(等价)联结词转化
+2.利用量词否定公式，把否定深入到命题变元和谓词公式的前面
+3.换名
+4.利用量词作用域的扩张和收缩等价式，将量词提到前面
+</code></pre><p>解：<br>1:∀xF(x)∧¬∃xG(x)</p>
+<pre><code>第一步：
+公式中没有蕴或等价，则第一步跳过
+第二步：
+量词前有否定
+¬∃xG(x)⇔∀x¬G(x)
+即原式变为：∀xF(x)∧∀x¬G(x)
+式子中有两个全称量词且指导变元都是x
+则使用换名
+第三步：
+将后面的∀x¬G(x)指导变元换为y
+即为∀y¬G(y)
+即为∀xF(x)∧∀y¬G(y)
+第四步：
+直接将量词提到前面
+即为∀x∀y(F(x)∧¬G(y))
+</code></pre><p>2:∀x<sub>1</sub>F(x<sub>1</sub>,x<sub>2</sub>)→∃x<sub>2</sub>G(x<sub>2</sub>)</p>
+<pre><code>第一步：转化
+式子中有蕴含则使用蕴含等值式
+即变为：
+¬∀x_1F(x_1,x_2)∨∃x_2G(x_2)
+第二步：去否定
+∃x_1¬F(x_1,x_2)∨∃x_2G(x_2)
+第三步：换名
+∃x_1¬F(x_1,x_2)∨∃x_3G(x_3)
+第四步：提前
+∃x_1∃x_3(F(x_1,x_2)∨G(x_3))
+</code></pre><p>2整理<br>∀x<sub>1</sub>F(x<sub>1</sub>,x<sub>2</sub>)→∃x<sub>2</sub>G(x<sub>2</sub>)<br>⇔<br>¬∀x<sub>1</sub>F(x<sub>1</sub>,x<sub>2</sub>)∨∃x<sub>2</sub>G(x<sub>2</sub>)<br>⇔<br>∃x<sub>1</sub>¬F(x<sub>1</sub>,x<sub>2</sub>)∨∃x<sub>2</sub>G(x<sub>2</sub>)<br>⇔<br>∃x<sub>1</sub>¬F(x<sub>1</sub>,x<sub>2</sub>)∨∃x<sub>3</sub>G(x<sub>3</sub>)<br>⇔∃x<sub>1</sub>∃x<sub>3</sub>(¬F(x<sub>1</sub>,x<sub>2</sub>)∨G(x<sub>3</sub>))</p>
+<h2 id="谓词逻辑推理理论"><a href="#谓词逻辑推理理论" class="headerlink" title="谓词逻辑推理理论"></a>谓词逻辑推理理论</h2><p>在谓词逻辑中，从前提A<sub>1</sub>,A<sub>2</sub>,…,A<sub>k</sub>出发推出结论B的推理形式结构，已然采用如下蕴含式形式A<sub>1</sub>∧A<sub>2</sub>∧……∧A<sub>k</sub>→B</p>
+<p>①命题逻辑推理定律的代换实例</p>
+<pre><code>∀xF(x)∧∀yG(y)⇒∀xF(x)
+∀xF(x)∧∀yG(y)
+由A∧B⇒A或B可得出
+∀xF(x)∧∀yG(y)⇒∀xF(x)或∀yG(y)
+--------------------------------
+∀xF(x)⇒∀xF(x)∨∃yG(y)
+∀xF(x)
+由附加律A⇒A∨B
+可得出
+∀xF(x)⇒∀xF(x)∨∃yG(y)
+</code></pre><p>②由基本等值式生成的推理实例</p>
+<pre><code>∀xF(x)⇒¬¬∀xF(x)
+¬¬∀xF(x)⇒∀xF(x)     即由A⇔¬¬A可得
+======================
+¬∀xF(x)⇒∃x¬F(x)
+∃x¬F(x)⇒¬∀xF(x)
+</code></pre><p>③常用重要推理定律</p>
+<pre><code>∀x(A(x)→B(x))⇒∀xA(x)→∀xB(x)
+∀x(A(x)→B(x))⇒∃xA(x)→∃xB(x)
+</code></pre><p>④4条消去量词和引入量词的规则</p>
+<pre><code>全称量词消去规则(∀—):∀xG(x)⇒G(c);c是任意个体常量
+存在量词消去规则(∃—):∃xG(x)⇒G(c);c是特定个体常量（使得G(c)真值为1的常量）
+全称量词引入规则(∀+):G(c)⇒∀xG(x);c是任意个体常量，里面不包括x
+存在量词引入规则(∃+):G(c)⇒∃xG(x);c是特定个体常量
+</code></pre><p>题1：<br>构造下面推理的证明</p>
+<pre><code>前提：∀x(F(x)→G(x)),∃x(F(x)∧H(x))
+结论：∃x(G(x)∧H(x))
+</code></pre><p>解：</p>
+<pre><code>命题逻辑中证明方法有三种：从结论逆向推导、附加前提法、归谬法
+结论：∃x(G(x)∧H(x))
+结论中没有蕴含排除附加前提法
+先考虑逆向推导
+结论：∃x(G(x)∧H(x))
+结论中有存在量词，先忽略它
+则有G(x)∧H(x)
+则先证明G(x)和H(x)之后在合取就行
+要求G(x)在∀x(F(x)→G(x))可以找到，要G(x)还需要F(x)
+F(x)在∃x(F(x)∧H(x))中由化简律可推出F(x)和H(x)
+因为是逆向推导，那么∃x(F(x)∧H(x))放在第一步
+</code></pre><p>证明：</p>
+<pre><code>①∃x(F(x)∧H(x))          前提引入
+②F(a)∧H(a)              ①∃—(存在量词消去规则)习惯用a替换x
+③F(a)                   ②化简律A∨B⇒A或B
+④H(a)                   ②化简律A∨B⇒A或B
+⑤∀x(F(x)→G(x))          前提引入
+⑥F(a)→G(a)              ⑤∀—
+⑦G(a)                   ③⑥假言推理(A→B)∧A⇒B
+⑧G(a)∧H(a)              ④⑦合取
+⑨∃x(G(x)∧H(x))          ⑧∃+
+得证∃x(G(x)∧H(x))是有效结论
+</code></pre><p>题2：<br>构造下面推理证明</p>
+<pre><code>前提：∀x(F(x)∨G(x))
+结论：¬∀xF(x)→∃xG(x)
+</code></pre><p>解：</p>
+<pre><code>结论：¬∀xF(x)→∃xG(x)
+结论中有蕴含使用附加前提法
+将结论前面的作为附加的前提
+¬∀xF(x)
+要证明的就是后面的∃xG(x)
+证明∃xG(x)是一个结论
+</code></pre><p>证明：</p>
+<pre><code>①¬∀xF(x)            附加前提引入
+②∃x¬F(x)            ①置换¬∀xA(x)⇔∃x¬A(x)
+③¬F(a)              ②∃—(存在量词消去规则)
+④∀x(F(x)∨G(x))      前提引入
+⑤F(a)∨G(a)          ④∀—
+⑥G(a)               ③⑤析取三段论(A∨B)∧¬B⇒A
+⑦∃xG(x)             ⑥∃+
+得证¬∀xF(x)→∃xG(x)是一个有效结论
+</code></pre><p>题3：<br>证明下列各式</p>
+<pre><code>所有北极熊都是白色的，没有棕熊是白色的，所以北极熊不是棕熊。
+</code></pre><p>解：</p>
+<pre><code>命题符号化
+所有……都……；是谓词逻辑关键词，使用谓词
+F(x):x是北极熊
+G(x):x是白色的
+H(x):x是棕熊
+构造前提和结论
+前提：
+所有北极熊都是白色的：∀x(F(x)→G(x))（全称量词使用蕴含）
+没有棕熊是白色的→有棕熊是白色的：∃x(H(x)∧G(x))
+即为¬∃x(H(x)∧G(x))
+即前提为：
+结论：
+所以北极熊不是棕熊：∀x(F(x)→¬H(x))
+</code></pre><p>总结：</p>
+<pre><code>前提：∀x(F(x)→G(x))，¬∃x(H(x)∧G(x))
+结论：∀x(F(x)→¬H(x))
+</code></pre><p>证明：</p>
+<pre><code>∀x(A(x)→B(x))⇒∀xA(x)→∀xB(x)
+结论中有蕴含，使用附加前提，这里我们使用归谬法来演示
+归谬法：把结论否定作为前提，和题目已有的前提进行推理，最后得出矛盾，则结论是有效结论
+①¬∀x(F(x)→¬H(x))            结论的否定引入
+先变为∃x¬(F(x)→¬H(x))
+蕴涵等值式A→B⇔¬A∨B
+(F(x)→¬H(x))⇒¬F(x)∨¬H(x)
+即为∃x¬(¬F(x)∨¬H(x))
+德摩根律¬(A∨B)⇔¬A∧¬B
+即为∃x(F(x)∧H(x))
+②∃x(F(x)∧H(x))              由①置换
+③F(a)∧H(a)                  ②∃—(存在量词消去规则)
+④F(a)                        ③化简律
+⑤H(a)                        ③化简律
+⑥∀x(F(x)→G(x))               前提引入
+⑦F(a)→G(a)                   ⑥∀—
+⑧G(a)                        ④⑦假言推理(A→B)∧A⇒B
+⑨H(a)∧G(a)                  ⑤⑧合取（和另外一个前提很相似）
+⑩∃x(H(x)∧G(x))              ⑨∃+
+∃x(H(x)∧G(x))∧¬∃x(H(x)∧G(x))为0
+则两者矛盾
+则结论为有效结论
+</code></pre><h1 id="集合代数"><a href="#集合代数" class="headerlink" title="集合代数"></a>集合代数</h1><h2 id="集合的基本概念"><a href="#集合的基本概念" class="headerlink" title="集合的基本概念"></a>集合的基本概念</h2><p>1.把一些事物汇集到一起组成一个整体就称作集合，而这些事物就是这个集合的元素或成员。<br>元素和集合之间的关系是隶属关系，即属于或不属于，属于记作∈，不属于记作∉<br>2.设A，B为集合，如果B中的每个元素都是A中的元素，则称B是A的子集，记作B⊆A，如果B不被A包含，记作B⊊A<br>3.设A,B为集合，如果A⊆B且B⊆A，则称A与B相等,记作A=B<br>4.设AB为集合，如果B⊆A且B≠A则称B是A的真子集，记作B⊂A<br>5.不含任何元素的集合称作空集，记作∅。空集是一切集合的子集<br>6.含有n个元素的集合简称为n元集，它的含有m(m≤n)个元素的子集称作它的m元子集</p>
+<p>题1：<br>A={1,2,3}，将A子集分类</p>
+<p>解：</p>
+<pre><code>0元子集：∅
+1元子集：&#123;1&#125;,&#123;2&#125;,&#123;3&#125;
+2元子集：&#123;1,2&#125;,&#123;1,3&#125;,&#123;2,3&#125;
+3元子集：&#123;1,2,3&#125;
+</code></pre><p>7.设A为集合，把A的全体子集构成的集合称作A的幂集，记作P(A)<br>例如:A={1,2,3}</p>
+<pre><code>0元子集：∅
+1元子集：&#123;1&#125;,&#123;2&#125;,&#123;3&#125;
+2元子集：&#123;1,2&#125;,&#123;1,3&#125;,&#123;2,3&#125;
+3元子集：&#123;1,2,3&#125;
+</code></pre><p>即P(A)={∅,{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}}<br>8.若A是n元集，则P(A)有2<sup>n</sup>个元素<br>9.在一个具体问题中，如果所涉及的集合都是某个集合的子集，则称这个集合为全集，记作E</p>
+<p>题2：</p>
+<pre><code>设S=&#123;∅,&#123;1&#125;,&#123;1,2&#125;&#125;,则下列正确的是（）
+A.&#123;&#123;1,2&#125;&#125;⊂S         B.&#123;&#123;1,2&#125;&#125;∈S
+C.1⊂S               D.&#123;1&#125;⊂S
+</code></pre><p>解：</p>
+<pre><code>S=&#123;∅,&#123;1&#125;,&#123;1,2&#125;&#125;
+0元子集：∅
+1元子集：&#123;∅&#125;,&#123;&#123;1&#125;&#125;,&#123;&#123;1,2&#125;&#125;
+2元子集：&#123;∅,&#123;1&#125;&#125;,&#123;∅,&#123;1,2&#125;&#125;,&#123;&#123;1&#125;,&#123;1,2&#125;&#125;
+3元子集：&#123;∅,&#123;1&#125;,&#123;1,2&#125;&#125;
+A.正确
+B.属于要是元素才行，这里是集合则错误
+C.1是元素&#123;&#123;1&#125;&#125;为集合所以C错误
+D.同上
+</code></pre><p>题3：<br>已知集合A={∅,1,2},则A的幂集和P(A)=<strong><strong>_</strong></strong></p>
+<p>解：</p>
+<pre><code>0元子集：∅
+1元子集：&#123;∅&#125;,&#123;1&#125;,&#123;2&#125;
+2元子集：&#123;∅,1&#125;,&#123;∅,2&#125;,&#123;1,2&#125;
+3元子集：&#123;∅,1,2&#125;
+则幂集为P(A)=&#123;∅,&#123;∅&#125;,&#123;1&#125;,&#123;2&#125;,&#123;∅,1&#125;,&#123;∅,2&#125;,&#123;1,2&#125;,&#123;∅,1,2&#125;&#125;
+</code></pre><h2 id="集合的运算"><a href="#集合的运算" class="headerlink" title="集合的运算"></a>集合的运算</h2><p>1.并运算：A∪B={x|x∈A∨x∈B}<br>2.交运算：A∩B={x|x∈A∧x∈B}<br>3.差运算：A-B={x|x∈A∧x∉B}<br>4.对称差：A⊕B=(A-B)∪(B-A)=(A∪B)-(A∩B)<br>5.A的绝对补集：~A=E-A={x|x∈E∧x∉A}</p>
+<p>题1：</p>
+<pre><code>设A=&#123;1,2,3&#125;,B=&#123;3,4,5&#125;,则差集A-B=_______,而对称差A⊕B=_________.
+</code></pre><p>解：</p>
+<pre><code>差运算：A-B=&#123;x|x∈A∧x∉B&#125;，在A中把属于B的排除
+则A-B=&#123;1,2&#125;
+对称差：A⊕B=(A-B)∪(B-A)=(A∪B)-(A∩B)
+使用A⊕B=(A∪B)-(A∩B)
+先∪得A∪B=&#123;1,2,3,4,5&#125;
+再来A∩B=&#123;3&#125;
+则A⊕B=&#123;1,2,4,5&#125;
+</code></pre><p>题2：</p>
+<pre><code>设全集E=&#123;1,2,3,4,5,6,7,8,9,10&#125;的子集为A=&#123;2,4,6,8,10&#125;,B=&#123;1,3,5,7,9&#125;,A⊕B=__________,~A∩~B=_________
+</code></pre><p>解：</p>
+<pre><code>用A⊕B=(A∪B)-(A∩B)
+A∪B=&#123;1,2,3,4,5,6,7,8,9,10&#125;
+A∩B=∅
+则A⊕B=&#123;1,2,3,4,5,6,7,8,9,10&#125;即E
+~A=E-A
+~A=&#123;1,3,5,7,9&#125;
+~B=&#123;2,4,6,8,10&#125;
+~A∩~B=∅
+</code></pre><h2 id="有穷集的计数"><a href="#有穷集的计数" class="headerlink" title="有穷集的计数"></a>有穷集的计数</h2><p>题1：</p>
+<p>对24名会外语的科技人员进行掌握外语情况的调查。其统计结果如下:会英、日、德和法语的人分别是13,5,10和9人，其中同时会英语和日语的有2人，会英、德和法语中任意两种语言的都是4人。已知会日语的人既不懂法语也不懂德语,分别求只会一种语言(英、德、法、日)的人数和会3种语言人数</p>
+<p>解：</p>
+<pre><code>令A、B、C、D分别表示会英、法、德、日语的人的集合
+设同时会3种语言的人有x个，只会英、法、德一种的人为y_1,y_2,y_3人
+</code></pre><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s11.ax1x.com/2024/01/02/pijkXiq.png" alt="验算"><br>解得，x=1,y<sub>1</sub>=4,y<sub>2</sub>=2,y<sub>3</sub>=3<br>答：………………</p>
+<p>包含排斥原理：</p>
+<p>|A∪B|=|A|+|B|-|A∩B|<br>|A∪B∪C|=|A|+|B|+|C|-|A∩B|-|A∩C|-|B∩C|+|A∩B∩C|<br>|Ā∩B非∩C非|=|S|-(|A|+|B|+|C|)+(|A∩B|+|A∩C|+|B∩C|)-|A∩B∩C|</p>
+<p>题2：<br>用集合计数的包含排斥原理，计算1-1000之间既不能被5和6，也不能被8整除的数的个数</p>
+<p>解：</p>
+<pre><code>设S=&#123;x|x∈Z∧1≤x≤1000&#125;
+A=&#123;x|x∈S∧x可被5整除&#125;
+B=&#123;x|x∈S∧x可被6整除&#125;
+C=&#123;x|x∈S∧x可被8整除&#125;
+用|T|表示有穷集T的元素数
+⌊x⌋表示小于等于x的最大整数
+|Ā∩B非∩C非|=|S|-(|A|+|B|+|C|)+(|A∩B|+|A∩C|+|B∩C|)-|A∩B∩C|
+|A|=1000/5=200
+|B|=1000/6=166
+|C|=1000/8=125
+|A∩B|既能被5除也能被6除，最小公倍数为30
+即|A∩B|=1000/30=33
+|A∩C|=1000/40=25
+|B∩C|=1000/24=41
+|A∩B∩C|=1000/120=8
+则
+|Ā∩B非∩C非|=1000-(200+166+125)+(33+25+41)-8=600
+</code></pre><h2 id="集合恒等式"><a href="#集合恒等式" class="headerlink" title="集合恒等式"></a>集合恒等式</h2><p>幂等律：A∪A=A   A∩A=A<br>结合律：(A∪B)∪C=A∪(B∪C)     (A∩B)∩C=A∩(B∩C)<br>交换律：A∪B=B∪A     A∩B=B∩A<br>分配律：A∪(B∩C)=(A∪B)∩(A∪C)     A∩(B∪C)=(A∩B)∪(A∩C)<br>同一律：A∪∅=A   A∩E=A<br>零律：A∪E=E     A∩∅=∅<br>排中律：A∪~A=E<br>矛盾律：A∩~A=∅<br>吸收律：A∪(A∩B)=A   A∩(A∪B)=A<br>德摩根律：A—(B∪C)=(A—B)∩(A—C)<br>         A—(B∩C)=(A—B)∪(A—C)<br>         ~(B∪C)=~B∩~C<br>         ~(B∩C)=~B∪~C<br>         ~∅=E</p>
+<p>常用公式：</p>
+<pre><code>A—B=A∩~B
+A∪B=B⇔A⊆B⇔A∩B=A⇔A-B=∅
+A⊕B=B⊕A
+(A⊕B)⊕C=A⊕(B⊕C)
+A⊕∅=A
+A⊕A=∅
+A⊕B=A⊕C⇒B=C
+A⊕~A=E
+</code></pre><p>题1：<br>证明A-(B∪C)=(A-B)∩(A-C)</p>
+<p>证明：</p>
+<pre><code>A-(B∪C)
+由A—B=A∩~B得
+A∩~(B∪C)
+再由德摩根率~(B∪C)=~B∩~C
+得A∩(~B∩~C)
+再由结合律(A∩B)∩C=A∩(B∩C)
+得A∩~B∩~C
+这里可以再交∩一个A不影响
+A∩~B∩~C∩A
+(A∩~B)∩(~C∩A)
+再由A—B=A∩~B
+得(A-B)∩(A-C)
+得证
+</code></pre><p>∧→¬∨↔⇔↑↓⇒∀∃∄—∈∉⊆⊇⊊≠⊂⊕<br>$\sum<em>{i=0}^N\int</em>{a}^{b}g(t,i)\text{d}t$<br>$\alpha$</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">HK</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/')">离散数学复习</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=离散数学复习&amp;url=http://example.com/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/&amp;pic=" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">HK的个人博客</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/12/22/EnglishsReview/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">EnglishsReview</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description"></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">命题逻辑的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">命题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E8%BF%9E%E6%8E%A5%E8%AF%8D"><span class="toc-number">1.2.</span> <span class="toc-text">命题连接词</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%A6%E5%AE%9A%E3%80%82"><span class="toc-number">1.2.1.</span> <span class="toc-text">否定。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E5%8F%96%E3%80%82"><span class="toc-number">1.2.2.</span> <span class="toc-text">合取。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%90%E5%8F%96%E3%80%82"><span class="toc-number">1.2.3.</span> <span class="toc-text">析取。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%95%B4%E6%B6%B5%E3%80%82"><span class="toc-number">1.2.4.</span> <span class="toc-text">蕴涵。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%89%E4%BB%B7%E3%80%82"><span class="toc-number">1.2.5.</span> <span class="toc-text">等价。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%85%88%E9%A1%BA%E5%BA%8F"><span class="toc-number">1.2.6.</span> <span class="toc-text">优先顺序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-number">1.2.7.</span> <span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E5%85%AC%E5%BC%8F%E5%8F%8A%E5%85%B6%E8%B5%8B%E5%80%BC"><span class="toc-number">1.3.</span> <span class="toc-text">命题公式及其赋值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E5%8F%98%E5%85%83"><span class="toc-number">1.3.1.</span> <span class="toc-text">命题变元</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%88%E5%BC%8F%E5%85%AC%E5%BC%8F"><span class="toc-number">1.3.2.</span> <span class="toc-text">合式公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%90%E7%9C%9F%E8%B5%8B%E5%80%BC%EF%BC%8C%E6%88%90%E5%81%87%E8%B5%8B%E5%80%BC"><span class="toc-number">1.3.3.</span> <span class="toc-text">成真赋值，成假赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A8%80%E5%BC%8F%E3%80%81%E7%9F%9B%E7%9B%BE%E5%BC%8F%E3%80%81%E5%8F%AF%E6%BB%A1%E8%B6%B3%E5%BC%8F"><span class="toc-number">1.3.4.</span> <span class="toc-text">重言式、矛盾式、可满足式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91%E7%AD%89%E5%80%BC%E6%BC%94%E7%AE%97"><span class="toc-number">2.</span> <span class="toc-text">命题逻辑等值演算</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%89%E5%80%BC%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">等值式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%90%E5%8F%96%E8%8C%83%E5%BC%8F%E4%B8%8E%E5%90%88%E5%8F%96%E8%8C%83%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">析取范式与合取范式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9E%90%E5%8F%96%E8%8C%83%E5%BC%8F%E4%B8%8E%E4%B8%BB%E5%90%88%E5%8F%96%E8%8C%83%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">主析取范式与主合取范式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9E%90%E5%8F%96%E8%8C%83%E5%BC%8F"><span class="toc-number">2.3.1.</span> <span class="toc-text">主析取范式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%90%88%E5%8F%96%E8%8C%83%E5%BC%8F"><span class="toc-number">2.3.2.</span> <span class="toc-text">主合取范式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="toc-number">2.3.3.</span> <span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E7%BB%93%E8%AF%8D%E7%9A%84%E5%AE%8C%E5%A4%87%E9%9B%86"><span class="toc-number">2.4.</span> <span class="toc-text">联结词的完备集</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91%E7%9A%84%E6%8E%A8%E7%90%86%E7%90%86%E8%AE%BA"><span class="toc-number">3.</span> <span class="toc-text">命题逻辑的推理理论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E7%90%86%E7%9A%84%E7%9B%B8%E5%85%B3%E5%85%AC%E5%BC%8F"><span class="toc-number">3.1.</span> <span class="toc-text">推理的相关公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E7%84%B6%E6%8E%A8%E7%90%86%E7%B3%BB%E7%BB%9FP"><span class="toc-number">3.2.</span> <span class="toc-text">自然推理系统P</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">4.</span> <span class="toc-text">谓词逻辑基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E5%91%BD%E9%A2%98%E7%AC%A6%E5%8F%B7%E5%8C%96"><span class="toc-number">4.1.</span> <span class="toc-text">谓词逻辑命题符号化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E5%85%AC%E5%BC%8F%E5%8F%8A%E8%A7%A3%E9%87%8A"><span class="toc-number">4.2.</span> <span class="toc-text">谓词逻辑公式及解释</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E7%AD%89%E5%80%BC%E6%BC%94%E7%AE%97%E4%B8%8E%E6%8E%A8%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">谓词逻辑等值演算与推理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E7%AD%89%E5%80%BC%E5%BC%8F%E4%B8%8E%E7%BD%AE%E6%8D%A2%E8%A7%84%E5%88%99"><span class="toc-number">5.1.</span> <span class="toc-text">谓词逻辑等值式与置换规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E5%89%8D%E6%9D%9F%E8%8C%83%E5%BC%8F"><span class="toc-number">5.2.</span> <span class="toc-text">谓词逻辑前束范式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%93%E8%AF%8D%E9%80%BB%E8%BE%91%E6%8E%A8%E7%90%86%E7%90%86%E8%AE%BA"><span class="toc-number">5.3.</span> <span class="toc-text">谓词逻辑推理理论</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E4%BB%A3%E6%95%B0"><span class="toc-number">6.</span> <span class="toc-text">集合代数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">6.1.</span> <span class="toc-text">集合的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E8%BF%90%E7%AE%97"><span class="toc-number">6.2.</span> <span class="toc-text">集合的运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E7%A9%B7%E9%9B%86%E7%9A%84%E8%AE%A1%E6%95%B0"><span class="toc-number">6.3.</span> <span class="toc-text">有穷集的计数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%E6%81%92%E7%AD%89%E5%BC%8F"><span class="toc-number">6.4.</span> <span class="toc-text">集合恒等式</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%A4%8D%E4%B9%A0/" title="离散数学复习">离散数学复习</a><time datetime="2023-12-24T11:25:44.000Z" title="发表于 2023-12-24 19:25:44">2023-12-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/22/EnglishsReview/" title="EnglishsReview">EnglishsReview</a><time datetime="2023-12-21T16:09:53.000Z" title="发表于 2023-12-22 00:09:53">2023-12-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/18/Java%E8%80%83%E8%AF%95%E5%A4%8D%E4%B9%A0/" title="Java考试复习">Java考试复习</a><time datetime="2023-12-18T01:44:49.000Z" title="发表于 2023-12-18 09:44:49">2023-12-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/11/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" title="Java学习笔记-2">Java学习笔记-2</a><time datetime="2023-12-11T02:34:33.000Z" title="发表于 2023-12-11 10:34:33">2023-12-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/04/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/" title="Java学习笔记-1">Java学习笔记-1</a><time datetime="2023-12-04T01:48:36.000Z" title="发表于 2023-12-04 09:48:36">2023-12-04</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2024 By <a class="footer-bar-link" href="/" title="HK" target="_blank">HK</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">7</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.png" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/AWD/" style="font-size: 0.88rem;">AWD<sup>1</sup></a><a href="/tags/CTF/" style="font-size: 0.88rem;">CTF<sup>1</sup></a><a href="/tags/Debug/" style="font-size: 0.88rem;">Debug<sup>1</sup></a><a href="/tags/Java/" style="font-size: 0.88rem;">Java<sup>1</sup></a><a href="/tags/Java%E9%98%B6%E6%AE%B5%E4%B8%80/" style="font-size: 0.88rem;">Java阶段一<sup>2</sup></a><a href="/tags/NONE/" style="font-size: 0.88rem;">NONE<sup>1</sup></a><a href="/tags/Python/" style="font-size: 0.88rem;">Python<sup>1</sup></a><a href="/tags/Python%E5%AD%A6%E4%B9%A0/" style="font-size: 0.88rem;">Python学习<sup>16</sup></a><a href="/tags/%E6%B0%B4%E6%BB%B4%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80%E7%8F%AD/" style="font-size: 0.88rem;">水滴逆向基础班<sup>1</sup></a><a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 0.88rem;">爬虫<sup>1</sup></a><a href="/tags/%E7%88%AC%E8%99%AB%EF%BC%9A%E4%B8%80/" style="font-size: 0.88rem;">爬虫：一<sup>10</sup></a><a href="/tags/%E7%BD%91%E7%AB%99/" style="font-size: 0.88rem;">网站<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 HK 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
